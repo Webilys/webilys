@@ -4,16 +4,49 @@ button {
   padding: 10px 20px;
   border-radius: 360px;
   margin: 10px auto;
+  transition: 0.2s ease;
+  cursor: url(../img/cursor-white.ico), pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+    a {
+      color: $black;
+      text-shadow: 0 0 5px transparent;
+      cursor: url(../img/cursor-white.ico), pointer;
+    }
+  }
 
   a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
     font-size: 1rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-shadow: 0 0 5px $blackShadow;
+    transition: 0.2s ease;
+  }
+}
 
-    &:hover {
-      text-shadow: 0 0 5px transparent;
-    }
+button[type="submit"] {
+  background: $degradeRadial;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 360px;
+  margin: 10px auto;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px $blackShadow;
+  cursor: url(../img/cursor-white.ico), pointer;
+  transition: 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    color: $black;
+    text-shadow: 0 0 5px transparent;
   }
 }

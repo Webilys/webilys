@@ -16,10 +16,21 @@ $bg: #000000;
 $black: #000;
 $white: #fff;
 $border: #f1f1f1;
+$colorOverlay: rgba(12, 7, 2, 0.8);
 $blackShadow: rgba(0, 0, 0, 0.25);
 $whiteShadow: rgba(255, 255, 255, 0.25);
 $degradeRadial: radial-gradient(circle, $color1 20%, $color2 80%);
 $degradeLineaire: linear-gradient(-180deg, $color1 20%, $color2 80%);
+$degradeLineaireOverlay: linear-gradient(
+  -180deg,
+  rgba(241, 197, 102, 0.8) 20%,
+  rgba(213, 150, 70, 0.8) 80%
+);
+$degradeLineaireOverlay2: linear-gradient(
+  -180deg,
+  rgba(241, 197, 102, 0.2) 20%,
+  rgba(213, 150, 70, 0.2) 80%
+);
 
 * {
   margin: 0;
@@ -28,13 +39,33 @@ $degradeLineaire: linear-gradient(-180deg, $color1 20%, $color2 80%);
   font-family: $font1;
   color: $white;
   text-align: center;
-  cursor: default;
   cursor: url(../img/cursor-gold.ico), pointer;
 }
 
 body {
   background: $bg;
   animation: fadeIn 0.7s linear;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+
+  background: -webkit-linear-gradient(-180deg, $color1 20%, $color2 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 80px;
+    margin: 20px auto 0;
+    border: 2px solid $color2;
+    box-shadow: 0 0 5px $blackShadow;
+  }
 }
 
 p {

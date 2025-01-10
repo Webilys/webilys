@@ -1,0 +1,16 @@
+.title-page {
+  width: 90%;
+  margin: 0 auto;
+  background: $degradeRadial;
+  padding: 10px 0;
+  border-radius: 360px;
+  margin-bottom: 50px;
+  cursor: url(../img/cursor-black.ico), pointer;
+
+  h1 {
+    text-shadow: 0 0 5px $blackShadow;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: url(../img/cursor-black.ico), pointer;
+  }
+}

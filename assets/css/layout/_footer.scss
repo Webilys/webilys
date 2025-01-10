@@ -4,6 +4,7 @@ footer {
   grid-template-columns: 70% 30%;
   padding: 15px 50px;
   box-shadow: 0 0 10px $blackShadow;
+  cursor: url(../img/cursor-white.ico), pointer;
 
   @media screen and (max-width: 900px) {
     grid-template-columns: 1fr;
@@ -14,6 +15,7 @@ footer {
     font-size: 0.9rem;
     text-shadow: 0 0 5px $blackShadow;
     transition: 0.2s;
+    cursor: url(../img/cursor-white.ico), pointer;
   }
 
   a {
@@ -26,6 +28,7 @@ footer {
     display: flex;
     justify-content: start;
     align-items: center;
+    cursor: url(../img/cursor-white.ico), pointer;
 
     @media screen and (max-width: 900px) {
       justify-content: center;
@@ -37,6 +40,7 @@ footer {
     display: flex;
     justify-content: end;
     align-items: center;
+    cursor: url(../img/cursor-white.ico), pointer;
 
     @media screen and (max-width: 900px) {
       justify-content: center;

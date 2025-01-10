@@ -5,6 +5,12 @@ main {
     display: flex;
     justify-content: start;
     align-items: center;
+
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      background: url(../img/hero.webp) center/cover no-repeat;
+    }
+
     .hero-container {
       cursor: url(../img/cursor-black.ico), pointer;
       background: $degradeLineaire;
@@ -14,6 +20,12 @@ main {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      @media screen and (max-width: 900px) {
+        width: 100%;
+        background: $degradeLineaireOverlay;
+        padding: 50px;
+      }
 
       img {
         width: 300px;
@@ -42,6 +54,245 @@ main {
         box-shadow: 0 0 5px $blackShadow;
         border: 2px solid $white;
         cursor: url(../img/cursor-black.ico), pointer;
+
+        &:hover {
+          border: 2px solid $black;
+        }
+      }
+    }
+  }
+
+  #services {
+    padding: 50px;
+    width: 90%;
+    margin: 0 auto;
+
+    p {
+      padding-bottom: 50px;
+    }
+
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr;
+      }
+
+      .service-item {
+        height: 100%;
+        background: $degradeLineaire;
+        border-radius: 10px;
+        padding: 20px;
+        cursor: url(../img/cursor-black.ico), pointer;
+        transition: 0.2s;
+
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 0 5px $whiteShadow;
+        }
+
+        i {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto 20px;
+          font-size: 2rem;
+          background: $degradeRadial;
+          padding: 40px;
+          border: 2px solid $white;
+          border-radius: 360px;
+          box-shadow: 0 0 5px $blackShadow;
+          cursor: url(../img/cursor-black.ico), pointer;
+        }
+
+        h3 {
+          padding-bottom: 20px;
+          text-shadow: 0 0 5px $blackShadow;
+          cursor: url(../img/cursor-black.ico), pointer;
+        }
+
+        p {
+          padding-bottom: 0;
+          text-shadow: 0 0 5px $blackShadow;
+          cursor: url(../img/cursor-black.ico), pointer;
+        }
+      }
+    }
+  }
+
+  .galerie {
+    padding: 50px;
+    width: 90%;
+    margin: 0 auto;
+
+    button {
+      margin: 50px 0 0;
+    }
+
+    .title-section {
+      display: grid;
+      grid-template-columns: 70% 30%;
+
+      h2 {
+        text-align: left;
+        padding-bottom: 30px;
+
+        &::after {
+          margin: 20px 0 0;
+        }
+      }
+
+      .iconsChangement {
+        display: flex;
+        justify-content: end;
+        gap: 20px;
+
+        i {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 360px;
+          background: $degradeLineaire;
+          color: $white;
+          transition: 0.2s;
+          cursor: url(../img/cursor-white.ico), pointer;
+
+          &:hover {
+            background: $degradeRadial;
+          }
+        }
+      }
+    }
+
+    .galerie-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // overflow: hidden; /* Masque les images hors de la plage visible */
+    }
+
+    .galerie-item {
+      display: none; /* Par défaut, toutes les images sont masquées */
+      flex: 0 0 calc(33.33% - 10px);
+      margin: 0 10px;
+      gap: 20px;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      border-radius: 10px;
+      transition: 0.2s;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px $blackShadow;
+        img {
+          box-shadow: 0 0 10px $color1;
+        }
+      }
+
+      img {
+        border-radius: 10px;
+        // box-shadow: 0 0 5px $color1;
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      p {
+        display: none;
+      }
+    }
+  }
+
+  #a-propos {
+    width: 90%;
+    margin: 50px auto;
+    cursor: url(../img/cursor-black.ico), pointer;
+
+    .a-propos-container {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      border-radius: 10px;
+      cursor: url(../img/cursor-black.ico), pointer;
+
+      .a-propos-img {
+        background: url(../img/a-propos.webp) right/contain no-repeat;
+        background-attachment: fixed;
+        border-radius: 0 10px 10px 0;
+        img {
+          width: 100%;
+          display: none;
+        }
+      }
+
+      .a-propos-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        // width: 50%;
+        margin: 0 0 0 auto;
+        background: $degradeLineaire;
+        border-radius: 10px 0 0 10px;
+        cursor: url(../img/cursor-black.ico), pointer;
+
+        h2 {
+          color: $white;
+          cursor: url(../img/cursor-black.ico), pointer;
+          text-shadow: 0 0 5px $blackShadow;
+          margin-bottom: 20px;
+
+          &:after {
+            border: 2px solid $white;
+            box-shadow: 0 0 5px $blackShadow;
+          }
+        }
+
+        h3 {
+          padding-bottom: 20px;
+        }
+        p {
+          cursor: url(../img/cursor-black.ico), pointer;
+          text-shadow: 0 0 5px $blackShadow;
+          text-align: justify;
+        }
+      }
+    }
+  }
+
+  #contact {
+    width: 90%;
+    margin: 50px auto;
+    background: #000;
+    p {
+      padding-bottom: 50px;
+    }
+    form {
+      width: 50%;
+      margin: 0 auto;
+      input,
+      textarea {
+        display: block;
+        margin: 0 auto 10px;
+        padding: 7px 10px;
+        width: 100%;
+        font-size: 1rem;
+        color: $white;
+        background: transparent;
+        border: 1px solid $color2;
+        border-radius: 10px;
+
+        &:hover,
+        &:focus,
+        &:active {
+          outline: 2px solid $color1;
+        }
       }
     }
   }

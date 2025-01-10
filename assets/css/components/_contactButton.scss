@@ -32,6 +32,7 @@
       margin-bottom: 20px;
       padding: 20px 20px 40px;
       border-radius: 5px 5px 0 0;
+      box-shadow: 0 0 5px $blackShadow;
 
       clip-path: polygon(
         0% 0%,
@@ -50,8 +51,9 @@
       font-size: 1.8rem;
       padding: 20px;
       border-radius: 360px;
+      box-shadow: 0 0 5px $blackShadow;
       transition: 0.2s;
-      cursor: url(../img/cursor-black.ico), pointer;
+      cursor: url(../img/cursor-white.ico), pointer;
     }
   }
 }
