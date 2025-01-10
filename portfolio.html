@@ -56,7 +56,8 @@
       name="twitter:image"
       content="https://webilys.fr/assets/img/hero.webp"
     />
-    <link rel="shortcut icon" href="./assets/img/logo.png" />
+    <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
+
     <link rel="stylesheet" href="./assets/css/index.css" />
     <link
       rel="stylesheet"
@@ -68,31 +69,34 @@
   </head>
   <body>
     <header>
-      <a href="./index.html"
-        ><img src="./assets/img/logo.png" alt="Logo de Webilys"
-      /></a>
-      <button class="menuIcons">
-        <i class="fa-solid fa-bars" id="openNav" onclick="openMenu()"></i>
-        <i class="fa-solid fa-xmark" id="closeNav" onclick="closeMenu()"></i>
-      </button>
-      <nav id="nav">
+      <a href="./index.html">
+        <div class="logo">
+          <img src="./assets/img/logo-webilys.png" alt="Logo Webilys" />
+        </div>
+      </a>
+      <div class="menuIcons">
+        <i class="fa-solid fa-bars" id="openIcon" onclick="openNav()"></i>
+        <i class="fa-solid fa-xmark" id="closeIcon" onclick="closeNav()"></i>
+      </div>
+      <nav>
         <ul>
-          <li><a href="./index.html">Accueil</a></li>
-          <li><a href="./a-propos.html">À propos</a></li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li>
+            <a href="./index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="./index.html#services">Services</a>
+          </li>
+          <li>
+            <a href="./index.html#nos-realisations">Portfolio</a>
+          </li>
+          <li>
+            <a href="./index.html#a-propos">À propos</a>
+          </li>
+          <li>
+            <a href="./index.html#contact">Contact</a>
+          </li>
         </ul>
       </nav>
-      <button class="buttonNav">
-        <a href="tel:+33641806660"
-          ><i class="fa-solid fa-mobile-screen-button"></i> Appelez-nous</a
-        >
-      </button>
-      <button class="buttonAppel">
-        <a href="tel:+33641806660"
-          ><i class="fa-solid fa-mobile-screen-button"></i>
-        </a>
-      </button>
     </header>
     <main>
       <section class="title-page">
@@ -171,68 +175,70 @@
           <img src="./assets/img/the-resto.png" alt="The resto" />
         </a>
       </section>
-      <section id="contact-section">
-        <div>
-          <h2>Contactez-nous</h2>
-          <p>
-            Vous avez un projet en tête ? Contactez Webilys dès aujourd'hui pour
-            discuter de vos besoins et découvrir comment nous pouvons vous aider
-            à réaliser vos ambitions digitales.
-          </p>
-          <form action="https://formspree.io/f/xdkozwew" method="POST">
-            <input
-              type="text"
-              name="nomEtPrenom"
-              id="nomEtPrenom"
-              placeholder="Nom et prénom"
-              required
-            />
-            <input
-              type="tel"
-              name="tel"
-              id="tel"
-              placeholder="Téléphone"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="email"
-              required
-            />
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="6"
-              placeholder="Décrivez votre projet"
-              required
-            ></textarea>
-            <button class="buttonClick" type="submit">Envoyer</button>
-          </form>
-        </div>
+
+      <section id="contact">
+        <h2>Vous êtes prêt à lancer votre projet ?</h2>
+        <p>
+          Webilys est là pour vous accompagner. Contactez-nous dès aujourd'hui
+          pour une consultation gratuite.
+        </p>
+        <form action="https://formspree.io/f/xdkozwew" method="POST">
+          <input
+            type="text"
+            name="nomEtPrenom"
+            id="nomEtPrenom"
+            placeholder="Nom et prénom*"
+            required
+          />
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="Téléphone*"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email*"
+            required
+          />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="6"
+            placeholder="Décrivez votre projet*"
+            required
+          ></textarea>
+          <label for="fileDownload"></label>
+          <input type="file" id="fileDownload" name="fileDownload" />
+          <button type="submit">Envoyer</button>
+        </form>
       </section>
     </main>
     <footer>
-      <div>
+      <div class="copyright">
         <p>
-          ©2024 | <a href="./index.html">Webilys</a> | Tous droits réservés.
+          ©2024 - <a href="./index.html">Webilys</a> - Tous droits réservés.
         </p>
-        <p>
-          <a href="https://www.tiktok.com/@webilys" target="_blank"
-            ><i class="fa-brands fa-tiktok"></i
-          ></a>
-          <a href="https://www.youtube.com/@Webilys" target="_blank"
-            ><i class="fa-brands fa-youtube"></i
-          ></a>
-        </p>
+      </div>
+      <div class="legal-link">
         <p>
           <a href="./mentions-legales.html">Mentions légales</a> |
           <a href="./confidentialite.html">Confidentialité</a>
         </p>
       </div>
     </footer>
+    <section class="contactButton">
+      <a href="tel:+33666430997">
+        <div class="buttonCall">
+          <p>Je contacte Webilys</p>
+          <i class="fa-solid fa-phone"></i>
+        </div>
+      </a>
+    </section>
     <script src="./assets/js/index.js"></script>
   </body>
 </html>

@@ -30,6 +30,7 @@
         padding: 20px;
         color: $white;
         text-shadow: 0 0 5px $blackShadow;
+        cursor: url(../img/cursor-black.ico), pointer;
 
         i {
           font-size: 2rem;
@@ -47,10 +48,12 @@
           border-radius: 360px;
           border: 2px solid $white;
           box-shadow: 0 0 5px $blackShadow;
+          cursor: url(../img/cursor-black.ico), pointer;
         }
 
         h3 {
           padding-bottom: 30px;
+          cursor: url(../img/cursor-black.ico), pointer;
 
           &:after {
             content: "";
@@ -63,6 +66,7 @@
         }
         p {
           color: $white;
+          cursor: url(../img/cursor-black.ico), pointer;
         }
       }
     }
