@@ -1,0 +1,55 @@
+.contactButton {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  .buttonCall {
+    transition: 0.2s ease;
+    &:hover {
+      i {
+        transform: translateY(-5px);
+        @media screen and (max-width: 900px) {
+          transform: none;
+        }
+      }
+      p {
+        display: flex;
+        animation: fadeIn 0.7s linear;
+
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
+      }
+    }
+
+    p {
+      display: none;
+      position: fixed;
+      bottom: 100px;
+      right: 50px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 20px 20px 40px;
+      border-radius: 5px 5px 0 0;
+
+      clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% 75%,
+        75% 75%,
+        75% 100%,
+        50% 75%,
+        0% 75%
+      );
+      background: $degradeRadial;
+    }
+
+    i {
+      background: $degradeRadial;
+      font-size: 1.8rem;
+      padding: 20px;
+      border-radius: 360px;
+      transition: 0.2s;
+    }
+  }
+}

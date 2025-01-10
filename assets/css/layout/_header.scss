@@ -8,11 +8,15 @@ header {
   }
 
   .logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
     img {
       width: 100%;
 
       @media screen and (max-width: 900px) {
-        width: 150px;
+        width: 170px;
       }
     }
   }
@@ -45,6 +49,8 @@ header {
 
     @media screen and (max-width: 900px) {
       display: none;
+      width: 80vw;
+      margin: 20px auto;
     }
 
     ul {
@@ -57,22 +63,39 @@ header {
       border-radius: 360px;
 
       @media screen and (max-width: 900px) {
-        grid-template-columns: 1fr;
         border-radius: 20px;
+        display: flex;
+        flex-direction: column;
       }
 
       li {
         list-style: none;
 
+        @media screen and (max-width: 900px) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+
         &:first-child {
           a {
             border-radius: 360px 0 0 360px;
+
+            @media screen and (max-width: 900px) {
+              border-radius: 20px 20px 0 0;
+            }
           }
         }
 
         &:last-child {
           a {
             border-radius: 0 360px 360px 0;
+
+            @media screen and (max-width: 900px) {
+              border-radius: 0 0 20px 20px;
+              border-bottom: none;
+            }
           }
         }
         a {
@@ -81,9 +104,17 @@ header {
           align-items: center;
           text-transform: uppercase;
           padding: 10px;
+          transition: 0.2s;
 
           @media screen and (max-width: 900px) {
             width: 100%;
+            padding: 15px;
+            border-bottom: 1px solid $border;
+          }
+
+          &:hover {
+            color: $black;
+            transform: scale(1.05);
           }
         }
       }

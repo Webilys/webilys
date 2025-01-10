@@ -5,7 +5,7 @@ const closeIcon = document.getElementById("closeIcon");
 function openNav() {
   openIcon.style.display = "none";
   closeIcon.style.display = "block";
-  nav.style.display = "grid";
+  nav.style.display = "block";
 }
 
 function closeNav() {
