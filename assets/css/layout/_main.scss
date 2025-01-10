@@ -7,43 +7,41 @@ main {
     align-items: center;
     .hero-container {
       cursor: url(../img/cursor-black.ico), pointer;
-      background: $degradeRadial;
+      background: $degradeLineaire;
       width: 40%;
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      img {
+        width: 300px;
+        filter: drop-shadow(0 0 5px $blackShadow);
+        cursor: url(../img/cursor-black.ico), pointer;
+        margin: 0 auto 20px;
+      }
       h1 {
-        color: $white;
-        font-size: 2.5rem;
-        // text-shadow: 0 0 5px $blackShadow;
+        color: $black;
+        font-size: 1.5rem;
+        margin-bottom: 50px;
+        font-weight: normal;
         cursor: url(../img/cursor-black.ico), pointer;
 
-        &:after {
+        &:before {
           content: "";
           display: block;
           width: 60px;
-          margin: 20px auto;
+          margin: 20px auto 40px;
           border: 2px solid $white;
-          // box-shadow: 0 0 5px $blackShadow;
+          box-shadow: 0 0 5px $blackShadow;
         }
-      }
-      p {
-        color: $black;
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-        // text-shadow: 0 0 5px $blackShadow;
-        cursor: url(../img/cursor-black.ico), pointer;
       }
 
       button {
-        box-shadow: 0 0 5px blackShadow;
+        box-shadow: 0 0 5px $blackShadow;
+        border: 2px solid $white;
         cursor: url(../img/cursor-black.ico), pointer;
-
-        a {
-          // color: $black;
-        }
       }
     }
   }
