@@ -1,0 +1,70 @@
+#services-pages {
+  width: 87%;
+  margin: 30px auto;
+  padding: 30px 0 0;
+  text-align: center;
+
+  #details,
+  #avantages {
+    margin-top: 50px;
+
+    #details-container,
+    #avantages-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+
+      @media screen and (max-width: 1170px) {
+        grid-template-columns: 1fr;
+      }
+
+      .detail-item,
+      .avantage-item {
+        height: 100%;
+        background: $degradeRadial;
+        box-shadow: 0 0 5px $blackShadow;
+        border-radius: 20px;
+        padding: 20px;
+        color: $white;
+        text-shadow: 0 0 5px $blackShadow;
+
+        i {
+          font-size: 2rem;
+          padding: 40px;
+          color: $white;
+          text-shadow: 0 0 5px $blackShadow;
+          display: block;
+          width: 40px;
+          height: 40px;
+          background: $degradeRadial;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto 20px;
+          border-radius: 360px;
+          border: 2px solid $white;
+          box-shadow: 0 0 5px $blackShadow;
+        }
+
+        h3 {
+          padding-bottom: 30px;
+
+          &:after {
+            content: "";
+            display: block;
+            width: 60px;
+            margin: 20px auto 0;
+            border: 2px solid $white;
+            box-shadow: 0 0 5px $blackShadow;
+          }
+        }
+        p {
+          color: $white;
+        }
+      }
+    }
+  }
+}

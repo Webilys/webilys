@@ -121,7 +121,7 @@ button[type=submit] {
   border: none;
   padding: 10px 20px;
   border-radius: 360px;
-  margin: 10px auto;
+  margin: 20px auto;
   font-weight: bold;
   font-size: 1rem;
   letter-spacing: 1px;
@@ -821,4 +821,122 @@ footer .legal-link {
 .legal a:hover {
   cursor: url(../img/cursor-white.ico), pointer;
   color: #f1c566;
+}
+
+#services-pages {
+  width: 87%;
+  margin: 30px auto;
+  padding: 30px 0 0;
+  text-align: center;
+}
+#services-pages #details,
+#services-pages #avantages {
+  margin-top: 50px;
+}
+#services-pages #details #details-container,
+#services-pages #details #avantages-container,
+#services-pages #avantages #details-container,
+#services-pages #avantages #avantages-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+@media screen and (max-width: 1170px) {
+  #services-pages #details #details-container,
+  #services-pages #details #avantages-container,
+  #services-pages #avantages #details-container,
+  #services-pages #avantages #avantages-container {
+    grid-template-columns: 1fr;
+  }
+}
+#services-pages #details #details-container .detail-item,
+#services-pages #details #details-container .avantage-item,
+#services-pages #details #avantages-container .detail-item,
+#services-pages #details #avantages-container .avantage-item,
+#services-pages #avantages #details-container .detail-item,
+#services-pages #avantages #details-container .avantage-item,
+#services-pages #avantages #avantages-container .detail-item,
+#services-pages #avantages #avantages-container .avantage-item {
+  height: 100%;
+  background: radial-gradient(circle, #f1c566 20%, #d59646 80%);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 20px;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+#services-pages #details #details-container .detail-item i,
+#services-pages #details #details-container .avantage-item i,
+#services-pages #details #avantages-container .detail-item i,
+#services-pages #details #avantages-container .avantage-item i,
+#services-pages #avantages #details-container .detail-item i,
+#services-pages #avantages #details-container .avantage-item i,
+#services-pages #avantages #avantages-container .detail-item i,
+#services-pages #avantages #avantages-container .avantage-item i {
+  font-size: 2rem;
+  padding: 40px;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle, #f1c566 20%, #d59646 80%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 20px;
+  border-radius: 360px;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+#services-pages #details #details-container .detail-item h3,
+#services-pages #details #details-container .avantage-item h3,
+#services-pages #details #avantages-container .detail-item h3,
+#services-pages #details #avantages-container .avantage-item h3,
+#services-pages #avantages #details-container .detail-item h3,
+#services-pages #avantages #details-container .avantage-item h3,
+#services-pages #avantages #avantages-container .detail-item h3,
+#services-pages #avantages #avantages-container .avantage-item h3 {
+  padding-bottom: 30px;
+}
+#services-pages #details #details-container .detail-item h3:after,
+#services-pages #details #details-container .avantage-item h3:after,
+#services-pages #details #avantages-container .detail-item h3:after,
+#services-pages #details #avantages-container .avantage-item h3:after,
+#services-pages #avantages #details-container .detail-item h3:after,
+#services-pages #avantages #details-container .avantage-item h3:after,
+#services-pages #avantages #avantages-container .detail-item h3:after,
+#services-pages #avantages #avantages-container .avantage-item h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  margin: 20px auto 0;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+#services-pages #details #details-container .detail-item p,
+#services-pages #details #details-container .avantage-item p,
+#services-pages #details #avantages-container .detail-item p,
+#services-pages #details #avantages-container .avantage-item p,
+#services-pages #avantages #details-container .detail-item p,
+#services-pages #avantages #details-container .avantage-item p,
+#services-pages #avantages #avantages-container .detail-item p,
+#services-pages #avantages #avantages-container .avantage-item p {
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */
