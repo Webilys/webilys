@@ -1,0 +1,40 @@
+//fonts
+
+@font-face {
+  font-family: "quicksand";
+  src: url(../fonts/quicksand.ttf);
+}
+
+$font1: "quicksand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+
+//colors
+
+$color1: #f1c566;
+$color2: #d59646;
+$color3: #7d633a;
+$color4: #d3af85;
+$bg: #000000;
+$black: #000;
+$white: #fff;
+$blackShadow: rgba(0, 0, 0, 0.25);
+$whiteShadow: rgba(255, 255, 255, 0.25);
+$degradeRadial: radial-gradient(circle, $color1 20%, $color2 80%);
+$degradeLineaire: linear-gradient(-180deg, $color1 20%, $color2 80%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font1;
+  color: $white;
+  text-align: center;
+}
+
+body {
+  background: $bg;
+}
+
+a {
+  text-decoration: none;
+}
