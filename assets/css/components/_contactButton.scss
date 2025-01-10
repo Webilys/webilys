@@ -2,6 +2,7 @@
   position: fixed;
   bottom: 40px;
   right: 20px;
+
   .buttonCall {
     transition: 0.2s ease;
     &:hover {
@@ -50,6 +51,7 @@
       padding: 20px;
       border-radius: 360px;
       transition: 0.2s;
+      cursor: url(../img/cursor-black.ico), pointer;
     }
   }
 }

@@ -1,5 +1,50 @@
 main {
   .hero {
-    background: url(../img/hero.webp) center/cover;
+    background: url(../img/hero.webp) right/contain no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    .hero-container {
+      cursor: url(../img/cursor-black.ico), pointer;
+      background: $degradeRadial;
+      width: 40%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        color: $white;
+        font-size: 2.5rem;
+        // text-shadow: 0 0 5px $blackShadow;
+        cursor: url(../img/cursor-black.ico), pointer;
+
+        &:after {
+          content: "";
+          display: block;
+          width: 60px;
+          margin: 20px auto;
+          border: 2px solid $white;
+          // box-shadow: 0 0 5px $blackShadow;
+        }
+      }
+      p {
+        color: $black;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        // text-shadow: 0 0 5px $blackShadow;
+        cursor: url(../img/cursor-black.ico), pointer;
+      }
+
+      button {
+        box-shadow: 0 0 5px blackShadow;
+        cursor: url(../img/cursor-black.ico), pointer;
+
+        a {
+          // color: $black;
+        }
+      }
+    }
   }
 }

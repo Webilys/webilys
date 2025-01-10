@@ -1,7 +1,8 @@
 header {
-  margin: 20px 50px;
+  padding: 20px 50px;
   display: grid;
   grid-template-columns: 15% 85%;
+  box-shadow: 0 0 10px $blackShadow;
 
   @media screen and (max-width: 900px) {
     grid-template-columns: 85% 15%;
@@ -12,7 +13,14 @@ header {
     justify-content: start;
     align-items: center;
 
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
+    }
+
     img {
+      transition: 0.2s;
       width: 100%;
 
       @media screen and (max-width: 900px) {
@@ -34,6 +42,7 @@ header {
       padding: 10px 20px;
       background: $degradeLineaire;
       font-size: 1.8rem;
+      text-shadow: 0 0 5px $blackShadow;
     }
 
     #closeIcon {
@@ -54,13 +63,14 @@ header {
     }
 
     ul {
-      width: 100%;
+      width: 80%;
       background: $degradeLineaire;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       justify-content: center;
       align-items: center;
       border-radius: 360px;
+      margin: 0 0 0 auto;
 
       @media screen and (max-width: 900px) {
         border-radius: 20px;
@@ -105,6 +115,10 @@ header {
           text-transform: uppercase;
           padding: 10px;
           transition: 0.2s;
+          font-weight: bold;
+          letter-spacing: 1px;
+          text-shadow: 0 0 5px $blackShadow;
+          // border: 2px solid $white;
 
           @media screen and (max-width: 900px) {
             width: 100%;
@@ -115,6 +129,7 @@ header {
           &:hover {
             color: $black;
             transform: scale(1.05);
+            text-shadow: 0 0 5px transparent;
           }
         }
       }
