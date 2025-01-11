@@ -32,6 +32,10 @@ main {
         filter: drop-shadow(0 0 5px $blackShadow);
         cursor: url(../img/cursor-black.ico), pointer;
         margin: 0 auto 20px;
+
+        @media screen and (max-width: 900px) {
+          width: 80%;
+        }
       }
       h1 {
         color: $black;
@@ -66,6 +70,10 @@ main {
     padding: 50px;
     width: 90%;
     margin: 0 auto;
+
+    @media screen and (max-width: 900px) {
+      padding: 50px 0;
+    }
 
     p {
       padding-bottom: 50px;
@@ -137,12 +145,28 @@ main {
       display: grid;
       grid-template-columns: 70% 30%;
 
+      @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+      }
+
       h2 {
         text-align: left;
         padding-bottom: 30px;
 
+        @media screen and (max-width: 900px) {
+          text-align: center;
+          padding-bottom: 20px;
+          margin-bottom: 0;
+        }
+
         &::after {
           margin: 20px 0 0;
+
+          @media screen and (max-width: 900px) {
+            margin: 20px auto;
+          }
         }
       }
 
@@ -150,6 +174,13 @@ main {
         display: flex;
         justify-content: end;
         gap: 20px;
+
+        @media screen and (max-width: 900px) {
+          // display: block;
+          justify-content: center;
+          align-items: center;
+          padding: 0 0 50px;
+        }
 
         i {
           display: flex;
@@ -175,6 +206,9 @@ main {
       justify-content: center;
       align-items: center;
       // overflow: hidden; /* Masque les images hors de la plage visible */
+      @media screen and (max-width: 900px) {
+        overflow: hidden;
+      }
     }
 
     .galerie-item {
@@ -186,6 +220,11 @@ main {
       scroll-behavior: smooth;
       border-radius: 10px;
       transition: 0.2s;
+
+      @media screen and (max-width: 900px) {
+        flex: 0 0 calc(100% - 10px);
+        overflow: hidden;
+      }
 
       &:hover {
         transform: scale(1.05);
@@ -220,13 +259,31 @@ main {
       border-radius: 10px;
       cursor: url(../img/cursor-black.ico), pointer;
 
+      @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
       .a-propos-img {
         background: url(../img/a-propos.webp) right/contain no-repeat;
         background-attachment: fixed;
         border-radius: 0 10px 10px 0;
+
+        @media screen and (max-width: 900px) {
+          border-radius: 10px;
+          background: none;
+          background-attachment: none;
+        }
+
         img {
           width: 100%;
           display: none;
+
+          @media screen and (max-width: 900px) {
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 0 10px $color1;
+            margin-bottom: 50px;
+          }
         }
       }
 
@@ -241,6 +298,10 @@ main {
         background: $degradeLineaire;
         border-radius: 10px 0 0 10px;
         cursor: url(../img/cursor-black.ico), pointer;
+
+        @media screen and (max-width: 900px) {
+          border-radius: 10px;
+        }
 
         h2 {
           color: $white;
@@ -276,6 +337,11 @@ main {
     form {
       width: 50%;
       margin: 0 auto;
+
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
+
       input,
       textarea {
         display: block;

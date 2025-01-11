@@ -5,6 +5,7 @@ header {
   display: grid;
   grid-template-columns: 15% 85%;
   box-shadow: 0 0 10px $blackShadow;
+  z-index: 9999999999999999999999999;
 
   @media screen and (max-width: 900px) {
     grid-template-columns: 85% 15%;
@@ -18,6 +19,10 @@ header {
     &:hover {
       img {
         transform: scale(1.05);
+
+        @media screen and (max-width: 900px) {
+          transform: none;
+        }
       }
     }
 
@@ -132,6 +137,11 @@ header {
             color: $black;
             transform: scale(1.05);
             text-shadow: 0 0 5px transparent;
+
+            @media screen and (max-width: 900px) {
+              color: $white;
+              transform: none;
+            }
           }
         }
       }

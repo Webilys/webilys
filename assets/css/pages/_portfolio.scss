@@ -26,6 +26,11 @@
     &:hover {
       transform: scale(1.1);
       box-shadow: 0 0 10px $blackShadow;
+
+      @media screen and (max-width: 900px) {
+        transform: none;
+        box-shadow: 0 0 5px $blackShadow;
+      }
     }
 
     img {

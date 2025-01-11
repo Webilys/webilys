@@ -13,6 +13,12 @@ button {
       color: $black;
       text-shadow: 0 0 5px transparent;
       cursor: url(../img/cursor-white.ico), pointer;
+
+      @media screen and (max-width: 900px) {
+        transform: none;
+        color: $white;
+        text-shadow: 0 0 5px $blackShadow;
+      }
     }
   }
 
@@ -48,5 +54,11 @@ button[type="submit"] {
     transform: translateY(-5px);
     color: $black;
     text-shadow: 0 0 5px transparent;
+
+    @media screen and (max-width: 900px) {
+      transform: none;
+      color: $white;
+      text-shadow: 0 0 5px $blackShadow;
+    }
   }
 }

@@ -2,6 +2,11 @@
   width: 90%;
   padding: 50px;
   margin: 0 50px;
+
+  @media screen and (max-width: 900px) {
+    margin: 0;
+  }
+
   h2 {
     margin-top: 20px;
     text-align: justify;
@@ -30,8 +35,11 @@
 
     &:hover {
       cursor: url(../img/cursor-white.ico), pointer;
-
       color: $color1;
+
+      @media screen and (max-width: 900px) {
+        color: $color2;
+      }
     }
   }
 }
