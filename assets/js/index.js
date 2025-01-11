@@ -29,6 +29,13 @@ let itemsPerPage = 3;
 function updateItemsPerPage() {
   if (window.innerWidth <= 900) {
     itemsPerPage = 1;
+    // Fonction pour activer le défilement automatique
+    function autoScroll() {
+      setInterval(() => {
+        suivant();
+      }, 3000); // Défile toutes les 10 secondes
+    }
+    autoScroll();
   } else {
     itemsPerPage = 3;
   }
@@ -74,15 +81,7 @@ function onResize() {
   updateGallery();
 }
 
-// // Fonction pour activer le défilement automatique
-// // function autoScroll() {
-// //   setInterval(() => {
-// //     suivant();
-// //   }, 5000); // Défile toutes les 10 secondes
-// // }
-
 // Initialisation
 window.addEventListener("resize", onResize);
 updateItemsPerPage();
 updateGallery();
-// autoScroll();
