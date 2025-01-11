@@ -20,17 +20,27 @@ if (window.innerWidth <= 900) {
 
 // GALERIE DU PORTFOLIO
 
-let currentIndex = 0; // Index de départ
+// Initialisation des variables
+let currentIndex = 0;
 const galerieItems = document.querySelectorAll(".galerie-item");
-const itemsPerPage = 3; // Nombre d'éléments visibles
+let itemsPerPage = 3;
 
-// Fonction pour mettre à jour la galerie (affichage des 3 éléments)
+// Fonction pour mettre à jour le nombre d'éléments visibles selon la largeur de l'écran
+function updateItemsPerPage() {
+  if (window.innerWidth <= 900) {
+    itemsPerPage = 1;
+  } else {
+    itemsPerPage = 3;
+  }
+}
+
+// Fonction pour mettre à jour la galerie (affichage des éléments visibles)
 function updateGallery() {
   galerieItems.forEach((item, index) => {
     if (index >= currentIndex && index < currentIndex + itemsPerPage) {
-      item.style.display = "block"; // Affiche les éléments dans la plage visible
+      item.style.display = "block";
     } else {
-      item.style.display = "none"; // Masque les éléments hors de la plage
+      item.style.display = "none";
     }
   });
 }
@@ -38,9 +48,9 @@ function updateGallery() {
 // Fonction pour passer à l'élément précédent
 function precedent() {
   if (currentIndex > 0) {
-    currentIndex--; // Décale d'une image en arrière
+    currentIndex--;
   } else {
-    currentIndex = galerieItems.length - itemsPerPage; // Retourne à la fin si au début
+    currentIndex = galerieItems.length - itemsPerPage;
   }
   updateGallery();
 }
@@ -48,19 +58,31 @@ function precedent() {
 // Fonction pour passer à l'élément suivant
 function suivant() {
   if (currentIndex + itemsPerPage < galerieItems.length) {
-    currentIndex++; // Décale d'une image en avant
+    currentIndex++;
   } else {
-    currentIndex = 0; // Retourne au début si à la fin
+    currentIndex = 0;
   }
   updateGallery();
 }
 
-// Fonction pour activer le défilement automatique
-// function autoScroll() {
-//   setInterval(() => {
-//     suivant();
-//   }, 10000); // Défile toutes les 10 secondes
-// }
+// Fonction pour réagir au redimensionnement de la fenêtre
+function onResize() {
+  updateItemsPerPage();
+  if (currentIndex + itemsPerPage > galerieItems.length) {
+    currentIndex = Math.max(0, galerieItems.length - itemsPerPage);
+  }
+  updateGallery();
+}
+
+// // Fonction pour activer le défilement automatique
+// // function autoScroll() {
+// //   setInterval(() => {
+// //     suivant();
+// //   }, 5000); // Défile toutes les 10 secondes
+// // }
 
 // Initialisation
+window.addEventListener("resize", onResize);
+updateItemsPerPage();
 updateGallery();
+// autoScroll();

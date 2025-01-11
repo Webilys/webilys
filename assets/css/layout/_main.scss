@@ -207,7 +207,7 @@ main {
       align-items: center;
       // overflow: hidden; /* Masque les images hors de la plage visible */
       @media screen and (max-width: 900px) {
-        overflow: hidden;
+        // overflow: hidden;
       }
     }
 
@@ -229,14 +229,22 @@ main {
       &:hover {
         transform: scale(1.05);
         box-shadow: 0 0 10px $blackShadow;
+
+        @media screen and (max-width: 900px) {
+          transform: none;
+          box-shadow: 0 0 10px transparent;
+        }
+
         img {
           box-shadow: 0 0 10px $color1;
+          @media screen and (max-width: 900px) {
+            box-shadow: 0 0 0 transparent;
+          }
         }
       }
 
       img {
         border-radius: 10px;
-        // box-shadow: 0 0 5px $color1;
         max-width: 100%;
         height: auto;
         display: block;
