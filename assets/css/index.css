@@ -807,6 +807,7 @@ main #a-propos .a-propos-container .a-propos-text h2:after {
 }
 main #a-propos .a-propos-container .a-propos-text h3 {
   padding-bottom: 20px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
 main #a-propos .a-propos-container .a-propos-text p {
   cursor: url(../img/cursor-black.ico), pointer;
