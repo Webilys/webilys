@@ -125,15 +125,8 @@
         Webilys est là pour vous accompagner. Contactez-nous dès aujourd'hui
         pour une consultation gratuite.
       </p>
-      <form action="https://formspree.io/f/xdkozwew" method="POST">
-        <input type="text" name="nomEtPrenom" id="nomEtPrenom" placeholder="Nom et prénom*" required />
-        <input type="tel" name="tel" id="tel" placeholder="Téléphone*" required />
-        <input type="email" name="email" id="email" placeholder="Email*" required />
-        <textarea name="message" id="message" cols="30" rows="6" placeholder="Décrivez votre projet*"
-          required></textarea>
+      <?php include './includes/form-contact.php' ?>
 
-        <button type="submit">Envoyer</button>
-      </form>
     </section>
   </main>
   <?php include './includes/footer.php'; ?>
