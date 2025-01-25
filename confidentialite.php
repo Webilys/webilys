@@ -53,18 +53,7 @@ if (!isset($_COOKIE['cookieWebilys'])) {
 </head>
 
 <body>
-  <header>
-    <a href="./index.html">
-      <div class="logo">
-        <img src="./assets/img/logo-webilys.png" alt="Logo Webilys" />
-      </div>
-    </a>
-    <div class="menuIcons">
-      <i class="fa-solid fa-bars" id="openIcon" onclick="openNav()"></i>
-      <i class="fa-solid fa-xmark" id="closeIcon" onclick="closeNav()"></i>
-    </div>
-    <?php include('includes/nav.php'); ?>
-  </header>
+  <?php include('includes/header.php'); ?>
   <main>
     <section class="title-page">
       <h1>Politique de Confidentialité</h1>
