@@ -1,251 +1,173 @@
 <?php
 if (!isset($_COOKIE['cookieWebilys'])) {
-    // Si le cookie n'existe pas, afficher le popup
-    $showPopup = true;
+  // Si le cookie n'existe pas, afficher le popup
+  $showPopup = true;
 } else {
-    // Si le cookie existe, ne pas afficher le popup
-    $showPopup = false;
+  // Si le cookie existe, ne pas afficher le popup
+  $showPopup = false;
 }
 ?>
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-1N9RTFVQX0"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-1N9RTFVQX0");
-    </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Webilys | Réalisations de Sites Web et Design</title>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1N9RTFVQX0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <meta
-      name="description"
-      content="Explorez le portfolio de Webilys et découvrez nos projets de création et de refonte de sites web, ainsi que nos designs graphiques. Des solutions digitales sur mesure pour chaque client."
-    />
-    <meta
-      name="keywords"
-      content="Webilys, portfolio, création de site web, refonte de site, design graphique, solutions digitales, projets web"
-    />
-    <meta name="author" content="Webilys" />
-    <meta
-      property="og:title"
-      content="Portfolio - Webilys | Réalisations de Sites Web et Design"
-    />
-    <meta
-      property="og:description"
-      content="Découvrez les projets réalisés par Webilys : création de sites, refonte, SEO et design graphique pour des marques variées."
-    />
-    <meta
-      property="og:image"
-      content="https://webilys.fr/assets/img/hero.webp"
-    />
-    <meta property="og:url" content="https://webilys.fr" />
-    <meta property="og:type" content="website" />
+    gtag("config", "G-1N9RTFVQX0");
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Webilys | Réalisations de Sites Web et Design</title>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Portfolio - Webilys | Réalisations de Sites Web et Design"
-    />
-    <meta
-      name="twitter:description"
-      content="Explorez notre portfolio et laissez-vous inspirer par les projets de Webilys, agence web à Tarascon spécialisée en création digitale."
-    />
-    <meta
-      name="twitter:image"
-      content="https://webilys.fr/assets/img/hero.webp"
-    />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.webilys.fr/portfolio.html" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
+  <meta name="description"
+    content="Explorez le portfolio de Webilys et découvrez nos projets de création et de refonte de sites web, ainsi que nos designs graphiques. Des solutions digitales sur mesure pour chaque client." />
+  <meta name="keywords"
+    content="Webilys, portfolio, création de site web, refonte de site, design graphique, solutions digitales, projets web" />
+  <meta name="author" content="Webilys" />
+  <meta property="og:title" content="Portfolio - Webilys | Réalisations de Sites Web et Design" />
+  <meta property="og:description"
+    content="Découvrez les projets réalisés par Webilys : création de sites, refonte, SEO et design graphique pour des marques variées." />
+  <meta property="og:image" content="https://webilys.fr/assets/img/hero.webp" />
+  <meta property="og:url" content="https://webilys.fr" />
+  <meta property="og:type" content="website" />
 
-    <link rel="stylesheet" href="./assets/css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header>
-      <a href="./index.html">
-        <div class="logo">
-          <img src="./assets/img/logo-webilys.png" alt="Logo Webilys" />
-        </div>
-      </a>
-      <div class="menuIcons">
-        <i class="fa-solid fa-bars" id="openIcon" onclick="openNav()"></i>
-        <i class="fa-solid fa-xmark" id="closeIcon" onclick="closeNav()"></i>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portfolio - Webilys | Réalisations de Sites Web et Design" />
+  <meta name="twitter:description"
+    content="Explorez notre portfolio et laissez-vous inspirer par les projets de Webilys, agence web à Tarascon spécialisée en création digitale." />
+  <meta name="twitter:image" content="https://webilys.fr/assets/img/hero.webp" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.webilys.fr/portfolio.html" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
+
+  <link rel="stylesheet" href="./assets/css/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <a href="./index.html">
+      <div class="logo">
+        <img src="./assets/img/logo-webilys.png" alt="Logo Webilys" />
       </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="./index.html">Accueil</a>
-          </li>
-          <li>
-            <a href="./index.html#services">Services</a>
-          </li>
-          <li>
-            <a href="./portfolio.html">Portfolio</a>
-          </li>
-          <li>
-            <a href="./index.html#a-propos">À propos</a>
-          </li>
-          <li>
-            <a href="./index.html#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="title-page">
-        <h1>Nos réalisations</h1>
-      </section>
+    </a>
+    <div class="menuIcons">
+      <i class="fa-solid fa-bars" id="openIcon" onclick="openNav()"></i>
+      <i class="fa-solid fa-xmark" id="closeIcon" onclick="closeNav()"></i>
+    </div>
+    <?php include('includes/nav.php'); ?>
 
-      <section id="intro-portfolio">
-        <p>
-          Découvrez nos réalisations, où chaque projet raconte une histoire
-          unique. <br /><br />Notre expertise s'exprime à travers des sites web
-          modernes, performants et des designs graphiques percutants, créés pour
-          répondre aux besoins spécifiques de nos clients. <br /><br />Que vous
-          cherchiez à lancer un site, à revitaliser votre présence en ligne ou à
-          enrichir votre marque, découvrez ici comment nous transformons vos
-          idées en expériences digitales captivantes. <br /><br />
-          Explorez notre travail et imaginez le potentiel pour votre propre
-          projet web.
-        </p>
-      </section>
-      <section id="portfolio-portfolio">
-        <!-- <a href="https://bengals-de-zeus.webilys.fr/" target="_blank">
+  </header>
+  <main>
+    <section class="title-page">
+      <h1>Nos réalisations</h1>
+    </section>
+
+    <section id="intro-portfolio">
+      <p>
+        Découvrez nos réalisations, où chaque projet raconte une histoire
+        unique. <br /><br />Notre expertise s'exprime à travers des sites web
+        modernes, performants et des designs graphiques percutants, créés pour
+        répondre aux besoins spécifiques de nos clients. <br /><br />Que vous
+        cherchiez à lancer un site, à revitaliser votre présence en ligne ou à
+        enrichir votre marque, découvrez ici comment nous transformons vos
+        idées en expériences digitales captivantes. <br /><br />
+        Explorez notre travail et imaginez le potentiel pour votre propre
+        projet web.
+      </p>
+    </section>
+    <section id="portfolio-portfolio">
+      <!-- <a href="https://bengals-de-zeus.webilys.fr/" target="_blank">
           <img src="./assets/img/bengals-de-zeus.png" alt="Bengals de Zeus" />
         </a> -->
-        <!-- <a href="https://monadressemiel.webilys.fr/" target="_blank">
+      <!-- <a href="https://monadressemiel.webilys.fr/" target="_blank">
           <img src="./assets/img/mon-adresse-miel.png" alt="Mon adresse miel" />
         </a> -->
-        <a href="https://burger-code.webilys.fr/" target="_blank">
-          <img src="./assets/img/burger-code.png" alt="Burger Code" />
-        </a>
-        <a href="https://fo-transport13.webilys.fr/" target="_blank">
-          <img src="./assets/img/fo-transport13.png" alt="FO Transport 13" />
-        </a>
-        <a href="https://lesdelicesdeleana.webilys.fr/" target="_blank">
-          <img
-            src="./assets/img/les-delices-de-leana.png"
-            alt="Les delices de Léana"
-          />
-        </a>
-        <a href="https://danyprovenceherbes.com" target="_blank">
-          <img
-            src="./assets/img/dany-provence-herbes.png"
-            alt="Dany Provence Herbes"
-          />
-        </a>
-        <a href="https://ici-bebe.fr/" target="_blank">
-          <img src="./assets/img/ici-bebe.png" alt="Ici Bébé" />
-        </a>
-        <a href="https://casadusud.fr/" target="_blank">
-          <img src="./assets/img/casa-du-sud.png" alt="Casa du sud" />
-        </a>
-        <a href="https://dpartenr.fr/" target="_blank">
-          <img src="./assets/img/dpartenr.png" alt="DParten'R" />
-        </a>
-        <a href="https://fashiongipsy.fr/" target="_blank">
-          <img src="./assets/img/fashion-gipsy.png" alt="" />
-        </a>
-        <a href="https://institutdelatarasque.fr/" target="_blank">
-          <img
-            src="./assets/img/institut-de-la-tarasque.png"
-            alt="Institut de la Tarasque"
-          />
-        </a>
-        <a href="https://sainte-marthe-tarascon.fr/" target="_blank">
-          <img
-            src="./assets/img/sainte-marthe.png"
-            alt="Établissement privé catholique Sainte Marthe"
-          />
-        </a>
-        <a href="https://jcfamilles.webilys.fr" target="_blank">
-          <img src="./assets/img/jcfamilles.png" alt="JC Familles" />
-        </a>
-        <a href="https://jplecaudey.com/" target="_blank">
-          <img src="./assets/img/jp-lecaudey.png" alt="JP Lecaudey" />
-        </a>
-        <a href="https://7ounet.fr/" target="_blank">
-          <img src="./assets/img/7-ou-net.png" alt="7 OU NET" />
-        </a>
-        <a href="https://the-resto.webilys.fr/" target="_blank">
-          <img src="./assets/img/the-resto.png" alt="The resto" />
-        </a>
-      </section>
+      <a href="https://burger-code.webilys.fr/" target="_blank">
+        <img src="./assets/img/burger-code.png" alt="Burger Code" />
+      </a>
+      <a href="https://fo-transport13.webilys.fr/" target="_blank">
+        <img src="./assets/img/fo-transport13.png" alt="FO Transport 13" />
+      </a>
+      <a href="https://lesdelicesdeleana.webilys.fr/" target="_blank">
+        <img src="./assets/img/les-delices-de-leana.png" alt="Les delices de Léana" />
+      </a>
+      <a href="https://danyprovenceherbes.com" target="_blank">
+        <img src="./assets/img/dany-provence-herbes.png" alt="Dany Provence Herbes" />
+      </a>
+      <a href="https://ici-bebe.fr/" target="_blank">
+        <img src="./assets/img/ici-bebe.png" alt="Ici Bébé" />
+      </a>
+      <a href="https://casadusud.fr/" target="_blank">
+        <img src="./assets/img/casa-du-sud.png" alt="Casa du sud" />
+      </a>
+      <a href="https://dpartenr.fr/" target="_blank">
+        <img src="./assets/img/dpartenr.png" alt="DParten'R" />
+      </a>
+      <a href="https://fashiongipsy.fr/" target="_blank">
+        <img src="./assets/img/fashion-gipsy.png" alt="" />
+      </a>
+      <a href="https://institutdelatarasque.fr/" target="_blank">
+        <img src="./assets/img/institut-de-la-tarasque.png" alt="Institut de la Tarasque" />
+      </a>
+      <a href="https://sainte-marthe-tarascon.fr/" target="_blank">
+        <img src="./assets/img/sainte-marthe.png" alt="Établissement privé catholique Sainte Marthe" />
+      </a>
+      <a href="https://jcfamilles.webilys.fr" target="_blank">
+        <img src="./assets/img/jcfamilles.png" alt="JC Familles" />
+      </a>
+      <a href="https://jplecaudey.com/" target="_blank">
+        <img src="./assets/img/jp-lecaudey.png" alt="JP Lecaudey" />
+      </a>
+      <a href="https://7ounet.fr/" target="_blank">
+        <img src="./assets/img/7-ou-net.png" alt="7 OU NET" />
+      </a>
+      <a href="https://the-resto.webilys.fr/" target="_blank">
+        <img src="./assets/img/the-resto.png" alt="The resto" />
+      </a>
+    </section>
 
-      <section id="contact">
-        <h2>Vous êtes prêt à lancer votre projet ?</h2>
-        <p>
-          Webilys est là pour vous accompagner. Contactez-nous dès aujourd'hui
-          pour une consultation gratuite.
-        </p>
-        <form action="https://formspree.io/f/xdkozwew" method="POST">
-          <input
-            type="text"
-            name="nomEtPrenom"
-            id="nomEtPrenom"
-            placeholder="Nom et prénom*"
-            required
-          />
-          <input
-            type="tel"
-            name="tel"
-            id="tel"
-            placeholder="Téléphone*"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email*"
-            required
-          />
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="6"
-            placeholder="Décrivez votre projet*"
-            required
-          ></textarea>
+    <section id="contact">
+      <h2>Vous êtes prêt à lancer votre projet ?</h2>
+      <p>
+        Webilys est là pour vous accompagner. Contactez-nous dès aujourd'hui
+        pour une consultation gratuite.
+      </p>
+      <form action="https://formspree.io/f/xdkozwew" method="POST">
+        <input type="text" name="nomEtPrenom" id="nomEtPrenom" placeholder="Nom et prénom*" required />
+        <input type="tel" name="tel" id="tel" placeholder="Téléphone*" required />
+        <input type="email" name="email" id="email" placeholder="Email*" required />
+        <textarea name="message" id="message" cols="30" rows="6" placeholder="Décrivez votre projet*"
+          required></textarea>
 
-          <button type="submit">Envoyer</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <div class="copyright">
-        <p>
-          ©2024 - <a href="./index.html">Webilys</a> - Tous droits réservés.
-        </p>
-      </div>
-      <div class="legal-link">
-        <p>
-          <a href="./mentions-legales.html">Mentions légales</a> |
-          <a href="./confidentialite.html">Confidentialité</a>
-        </p>
-      </div>
-    </footer>
-    <?php if ($showPopup): ?>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="copyright">
+      <p>
+        ©2024 - <a href="./index.html">Webilys</a> - Tous droits réservés.
+      </p>
+    </div>
+    <div class="legal-link">
+      <p>
+        <a href="./mentions-legales.html">Mentions légales</a> |
+        <a href="./confidentialite.html">Confidentialité</a>
+      </p>
+    </div>
+  </footer>
+  <?php if ($showPopup): ?>
     <div id="cookiePopup" class="show">
       <img src="./assets/img/cookie.png" alt="Cookies" />
       <p>
@@ -255,16 +177,17 @@ if (!isset($_COOKIE['cookieWebilys'])) {
       </p>
       <button id="acceptCookie">Accepter</button>
     </div>
-    <?php endif; ?>
+  <?php endif; ?>
 
-    <section class="contactButton">
-      <a href="tel:+33666430997">
-        <div class="buttonCall">
-          <p>Je contacte Webilys</p>
-          <i class="fa-solid fa-phone"></i>
-        </div>
-      </a>
-    </section>
-    <script src="./assets/js/index.js"></script>
-  </body>
+  <section class="contactButton">
+    <a href="tel:+33666430997">
+      <div class="buttonCall">
+        <p>Je contacte Webilys</p>
+        <i class="fa-solid fa-phone"></i>
+      </div>
+    </a>
+  </section>
+  <script src="./assets/js/index.js"></script>
+</body>
+
 </html>

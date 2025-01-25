@@ -1,259 +1,187 @@
 <?php
 if (!isset($_COOKIE['cookieWebilys'])) {
-    // Si le cookie n'existe pas, afficher le popup
-    $showPopup = true;
+  // Si le cookie n'existe pas, afficher le popup
+  $showPopup = true;
 } else {
-    // Si le cookie existe, ne pas afficher le popup
-    $showPopup = false;
+  // Si le cookie existe, ne pas afficher le popup
+  $showPopup = false;
 }
 ?>
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-1N9RTFVQX0"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-1N9RTFVQX0");
-    </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Refonte de Sites - Webilys | Modernisez votre Présence en Ligne
-    </title>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1N9RTFVQX0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <meta
-      name="description"
-      content="Découvrez le service de refonte de sites de Webilys pour moderniser, optimiser et améliorer les performances de votre site actuel. Faites évoluer votre site pour attirer et convertir efficacement vos visiteurs."
-    />
-    <meta
-      name="keywords"
-      content="Webilys, refonte de site, optimisation de site web, amélioration site web, design moderne, SEO, expérience utilisateur, UX"
-    />
-    <meta name="author" content="Webilys" />
+    gtag("config", "G-1N9RTFVQX0");
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Refonte de Sites - Webilys | Modernisez votre Présence en Ligne
+  </title>
 
-    <meta
-      property="og:title"
-      content="Refonte de Sites - Webilys | Modernisez votre Présence en Ligne"
-    />
-    <meta
-      property="og:description"
-      content="Redonnez vie à votre site avec la refonte de Webilys. Transformez votre présence en ligne avec un site optimisé, moderne et performant."
-    />
-    <meta
-      property="og:image"
-      content="https://webilys.fr/assets/img/hero.webp"
-    />
-    <meta
-      property="og:url"
-      content="https://webilys.fr/refonte-de-site-web.html"
-    />
-    <meta property="og:type" content="website" />
+  <meta name="description"
+    content="Découvrez le service de refonte de sites de Webilys pour moderniser, optimiser et améliorer les performances de votre site actuel. Faites évoluer votre site pour attirer et convertir efficacement vos visiteurs." />
+  <meta name="keywords"
+    content="Webilys, refonte de site, optimisation de site web, amélioration site web, design moderne, SEO, expérience utilisateur, UX" />
+  <meta name="author" content="Webilys" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Refonte de Sites - Webilys | Modernisez votre Présence en Ligne"
-    />
-    <meta
-      name="twitter:description"
-      content="Optimisez votre site actuel avec Webilys pour mieux convertir et engager votre audience."
-    />
-    <meta
-      name="twitter:image"
-      content="https://webilys.fr/assets/img/hero.webp"
-    />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://www.webilys.fr/refonte-de-site-web.html"
-    />
-    <meta name="theme-color" content="#000000" />
-    <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
+  <meta property="og:title" content="Refonte de Sites - Webilys | Modernisez votre Présence en Ligne" />
+  <meta property="og:description"
+    content="Redonnez vie à votre site avec la refonte de Webilys. Transformez votre présence en ligne avec un site optimisé, moderne et performant." />
+  <meta property="og:image" content="https://webilys.fr/assets/img/hero.webp" />
+  <meta property="og:url" content="https://webilys.fr/refonte-de-site-web.html" />
+  <meta property="og:type" content="website" />
 
-    <link rel="stylesheet" href="./assets/css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header>
-      <a href="./index.html">
-        <div class="logo">
-          <img src="./assets/img/logo-webilys.png" alt="Logo Webilys" />
-        </div>
-      </a>
-      <div class="menuIcons">
-        <i class="fa-solid fa-bars" id="openIcon" onclick="openNav()"></i>
-        <i class="fa-solid fa-xmark" id="closeIcon" onclick="closeNav()"></i>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Refonte de Sites - Webilys | Modernisez votre Présence en Ligne" />
+  <meta name="twitter:description"
+    content="Optimisez votre site actuel avec Webilys pour mieux convertir et engager votre audience." />
+  <meta name="twitter:image" content="https://webilys.fr/assets/img/hero.webp" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.webilys.fr/refonte-de-site-web.html" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
+
+  <link rel="stylesheet" href="./assets/css/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <a href="./index.html">
+      <div class="logo">
+        <img src="./assets/img/logo-webilys.png" alt="Logo Webilys" />
       </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="./index.html">Accueil</a>
-          </li>
-          <li>
-            <a href="./index.html#services">Services</a>
-          </li>
-          <li>
-            <a href="./portfolio.html">Portfolio</a>
-          </li>
-          <li>
-            <a href="./index.html#a-propos">À propos</a>
-          </li>
-          <li>
-            <a href="./index.html#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    </a>
+    <div class="menuIcons">
+      <i class="fa-solid fa-bars" id="openIcon" onclick="openNav()"></i>
+      <i class="fa-solid fa-xmark" id="closeIcon" onclick="closeNav()"></i>
+    </div>
+    <?php include('includes/nav.php'); ?>
 
-    <main>
-      <section class="title-page">
-        <h1>Refonte de Sites</h1>
-      </section>
+  </header>
 
-      <section id="services-pages">
-        <div id="service-intro">
-          <p>
-            Chez Webilys, la refonte de sites est une opportunité de redonner
-            vie à votre présence en ligne. Nous modernisons, optimisons et
-            améliorons votre site existant pour qu'il attire, engage et
-            convertisse efficacement. <br /><br />
-            Que ce soit pour rafraîchir le design, optimiser la vitesse ou
-            améliorer l'expérience utilisateur, notre équipe s’assure que votre
-            site reflète l’image actuelle de votre marque.
+  <main>
+    <section class="title-page">
+      <h1>Refonte de Sites</h1>
+    </section>
+
+    <section id="services-pages">
+      <div id="service-intro">
+        <p>
+          Chez Webilys, la refonte de sites est une opportunité de redonner
+          vie à votre présence en ligne. Nous modernisons, optimisons et
+          améliorons votre site existant pour qu'il attire, engage et
+          convertisse efficacement. <br /><br />
+          Que ce soit pour rafraîchir le design, optimiser la vitesse ou
+          améliorer l'expérience utilisateur, notre équipe s’assure que votre
+          site reflète l’image actuelle de votre marque.
+        </p>
+      </div>
+      <div id="details">
+        <h2>Notre approche</h2>
+        <div id="details-container">
+          <div class="detail-item">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Évaluation complète</h3>
+            <p>
+              Nous analysons les forces et les faiblesses de votre site actuel
+              pour définir les axes d'amélioration.
+            </p>
+          </div>
+          <div class="detail-item">
+            <i class="fa-solid fa-palette"></i>
+            <h3>Design rafraîchi</h3>
+            <p>
+              Nous réinventons l'interface de votre site pour lui donner un
+              look moderne et en phase avec votre identité.
+            </p>
+          </div>
+          <div class="detail-item">
+            <i class="fa-solid fa-rocket"></i>
+            <h3>Optimisation technique</h3>
+            <p>
+              Nous assurons des performances optimales en termes de vitesse,
+              de sécurité et de SEO pour un meilleur classement et une
+              meilleure expérience utilisateur.
+            </p>
+          </div>
+          <div class="detail-item">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <h3>Amélioration de l'UX</h3>
+            <p>
+              Nous optimisons la navigation pour offrir une expérience
+              utilisateur fluide et intuitive.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="avantages">
+        <h2>Avantages d'une refonte par Webilys</h2>
+        <div id="avantages-container">
+          <p class="avantage-item">
+            <i class="fa-solid fa-users"></i>
+            Renforcez l'engagement et la satisfaction de vos visiteurs
+          </p>
+          <p class="avantage-item">
+            <i class="fa-solid fa-bolt"></i>
+            Bénéficiez d’un site plus rapide et plus performant
+          </p>
+          <p class="avantage-item">
+            <i class="fa-solid fa-search"></i>
+            Améliorez votre référencement et gagnez en visibilité
+          </p>
+          <p class="avantage-item">
+            <i class="fa-solid fa-chart-line"></i>
+            Boostez vos conversions grâce à une meilleure expérience
+            utilisateur
           </p>
         </div>
-        <div id="details">
-          <h2>Notre approche</h2>
-          <div id="details-container">
-            <div class="detail-item">
-              <i class="fa-solid fa-chart-line"></i>
-              <h3>Évaluation complète</h3>
-              <p>
-                Nous analysons les forces et les faiblesses de votre site actuel
-                pour définir les axes d'amélioration.
-              </p>
-            </div>
-            <div class="detail-item">
-              <i class="fa-solid fa-palette"></i>
-              <h3>Design rafraîchi</h3>
-              <p>
-                Nous réinventons l'interface de votre site pour lui donner un
-                look moderne et en phase avec votre identité.
-              </p>
-            </div>
-            <div class="detail-item">
-              <i class="fa-solid fa-rocket"></i>
-              <h3>Optimisation technique</h3>
-              <p>
-                Nous assurons des performances optimales en termes de vitesse,
-                de sécurité et de SEO pour un meilleur classement et une
-                meilleure expérience utilisateur.
-              </p>
-            </div>
-            <div class="detail-item">
-              <i class="fa-solid fa-thumbs-up"></i>
-              <h3>Amélioration de l'UX</h3>
-              <p>
-                Nous optimisons la navigation pour offrir une expérience
-                utilisateur fluide et intuitive.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div id="avantages">
-          <h2>Avantages d'une refonte par Webilys</h2>
-          <div id="avantages-container">
-            <p class="avantage-item">
-              <i class="fa-solid fa-users"></i>
-              Renforcez l'engagement et la satisfaction de vos visiteurs
-            </p>
-            <p class="avantage-item">
-              <i class="fa-solid fa-bolt"></i>
-              Bénéficiez d’un site plus rapide et plus performant
-            </p>
-            <p class="avantage-item">
-              <i class="fa-solid fa-search"></i>
-              Améliorez votre référencement et gagnez en visibilité
-            </p>
-            <p class="avantage-item">
-              <i class="fa-solid fa-chart-line"></i>
-              Boostez vos conversions grâce à une meilleure expérience
-              utilisateur
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact">
-        <h2>Vous êtes prêt à lancer votre projet ?</h2>
-        <p>
-          Webilys est là pour vous accompagner. Contactez-nous dès aujourd'hui
-          pour une consultation gratuite.
-        </p>
-        <form action="https://formspree.io/f/xdkozwew" method="POST">
-          <input
-            type="text"
-            name="nomEtPrenom"
-            id="nomEtPrenom"
-            placeholder="Nom et prénom*"
-            required
-          />
-          <input
-            type="tel"
-            name="tel"
-            id="tel"
-            placeholder="Téléphone*"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email*"
-            required
-          />
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="6"
-            placeholder="Décrivez votre projet*"
-            required
-          ></textarea>
-
-          <button type="submit">Envoyer</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <div class="copyright">
-        <p>
-          ©2024 - <a href="./index.html">Webilys</a> - Tous droits réservés.
-        </p>
       </div>
-      <div class="legal-link">
-        <p>
-          <a href="./mentions-legales.html">Mentions légales</a> |
-          <a href="./confidentialite.html">Confidentialité</a>
-        </p>
-      </div>
-    </footer>
-    <?php if ($showPopup): ?>
+    </section>
+
+    <section id="contact">
+      <h2>Vous êtes prêt à lancer votre projet ?</h2>
+      <p>
+        Webilys est là pour vous accompagner. Contactez-nous dès aujourd'hui
+        pour une consultation gratuite.
+      </p>
+      <form action="https://formspree.io/f/xdkozwew" method="POST">
+        <input type="text" name="nomEtPrenom" id="nomEtPrenom" placeholder="Nom et prénom*" required />
+        <input type="tel" name="tel" id="tel" placeholder="Téléphone*" required />
+        <input type="email" name="email" id="email" placeholder="Email*" required />
+        <textarea name="message" id="message" cols="30" rows="6" placeholder="Décrivez votre projet*"
+          required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="copyright">
+      <p>
+        ©2024 - <a href="./index.html">Webilys</a> - Tous droits réservés.
+      </p>
+    </div>
+    <div class="legal-link">
+      <p>
+        <a href="./mentions-legales.html">Mentions légales</a> |
+        <a href="./confidentialite.html">Confidentialité</a>
+      </p>
+    </div>
+  </footer>
+  <?php if ($showPopup): ?>
     <div id="cookiePopup" class="show">
       <img src="./assets/img/cookie.png" alt="Cookies" />
       <p>
@@ -263,16 +191,17 @@ if (!isset($_COOKIE['cookieWebilys'])) {
       </p>
       <button id="acceptCookie">Accepter</button>
     </div>
-    <?php endif; ?>
+  <?php endif; ?>
 
-    <section class="contactButton">
-      <a href="tel:+33666430997">
-        <div class="buttonCall">
-          <p>Je contacte Webilys</p>
-          <i class="fa-solid fa-phone"></i>
-        </div>
-      </a>
-    </section>
-    <script src="./assets/js/index.js"></script>
-  </body>
+  <section class="contactButton">
+    <a href="tel:+33666430997">
+      <div class="buttonCall">
+        <p>Je contacte Webilys</p>
+        <i class="fa-solid fa-phone"></i>
+      </div>
+    </a>
+  </section>
+  <script src="./assets/js/index.js"></script>
+</body>
+
 </html>
