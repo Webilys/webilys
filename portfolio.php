@@ -1,12 +1,5 @@
-<?php
-if (!isset($_COOKIE['cookieWebilys'])) {
-  // Si le cookie n'existe pas, afficher le popup
-  $showPopup = true;
-} else {
-  // Si le cookie existe, ne pas afficher le popup
-  $showPopup = false;
-}
-?>
+<?php require './includes/cookie-verification.php'; ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -44,7 +37,7 @@ if (!isset($_COOKIE['cookieWebilys'])) {
     content="Explorez notre portfolio et laissez-vous inspirer par les projets de Webilys, agence web à Tarascon spécialisée en création digitale." />
   <meta name="twitter:image" content="https://webilys.fr/assets/img/hero.webp" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.webilys.fr/portfolio.html" />
+  <link rel="canonical" href="https://www.webilys.fr/portfolio.php" />
   <meta name="theme-color" content="#000000" />
   <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
 
@@ -55,7 +48,7 @@ if (!isset($_COOKIE['cookieWebilys'])) {
 </head>
 
 <body>
-  <?php include('includes/header.php'); ?>
+  <?php include './includes/header.php'; ?>
 
   <main>
     <section class="title-page">
@@ -143,39 +136,10 @@ if (!isset($_COOKIE['cookieWebilys'])) {
       </form>
     </section>
   </main>
-  <footer>
-    <div class="copyright">
-      <p>
-        ©2024 - <a href="./index.html">Webilys</a> - Tous droits réservés.
-      </p>
-    </div>
-    <div class="legal-link">
-      <p>
-        <a href="./mentions-legales.html">Mentions légales</a> |
-        <a href="./confidentialite.html">Confidentialité</a>
-      </p>
-    </div>
-  </footer>
-  <?php if ($showPopup): ?>
-    <div id="cookiePopup" class="show">
-      <img src="./assets/img/cookie.png" alt="Cookies" />
-      <p>
-        Ce site utilise des cookies pour vous garantir la meilleure expérience
-        sur notre site. En utilisant notre site, vous acceptez les cookies.
-        <a href="./cookies.html">En savoir plus</a>
-      </p>
-      <button id="acceptCookie">Accepter</button>
-    </div>
-  <?php endif; ?>
+  <?php include './includes/footer.php'; ?>
+  <?php include './includes/cookie-popup.php'; ?>
+  <?php include './includes/button-call.php'; ?>
 
-  <section class="contactButton">
-    <a href="tel:+33666430997">
-      <div class="buttonCall">
-        <p>Je contacte Webilys</p>
-        <i class="fa-solid fa-phone"></i>
-      </div>
-    </a>
-  </section>
   <script src="./assets/js/index.js"></script>
 </body>
 

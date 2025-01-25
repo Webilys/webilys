@@ -1,7 +1,7 @@
 <?php
 echo '
 <header>
-<a href="./index.html">
+<a href="./index.php">
 <div class="logo">
   <img src="./assets/img/logo-webilys.png" alt="Logo Webilys" />
 </div>
@@ -30,4 +30,4 @@ echo '
 </ul>
 </nav>
 </header>'
-    ?>
+  ?>

@@ -1,12 +1,5 @@
-<?php
-if (!isset($_COOKIE['cookieWebilys'])) {
-  // Si le cookie n'existe pas, afficher le popup
-  $showPopup = true;
-} else {
-  // Si le cookie existe, ne pas afficher le popup
-  $showPopup = false;
-}
-?>
+<?php require './includes/cookie-verification.php'; ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -47,7 +40,7 @@ if (!isset($_COOKIE['cookieWebilys'])) {
     content="Webilys, l'agence digitale pour vos projets web : création de sites, refonte, SEO, Ads et design graphique." />
   <meta name="twitter:image" content="https://webilys.fr/assets/img/hero.webp" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.webilys.fr/index.html" />
+  <link rel="canonical" href="https://www.webilys.fr/index.php" />
   <meta name="theme-color" content="#000000" />
   <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
 
@@ -58,7 +51,7 @@ if (!isset($_COOKIE['cookieWebilys'])) {
 </head>
 
 <body>
-  <?php include('includes/header.php'); ?>
+  <?php include './includes/header.php'; ?>
 
   <main>
     <section class="hero">
@@ -77,7 +70,7 @@ if (!isset($_COOKIE['cookieWebilys'])) {
         créatives et efficaces.
       </p>
       <div class="services-container">
-        <a href="./creation-de-site-web.html">
+        <a href="./creation-de-site-web.php">
           <div class="service-item">
             <i class="fa-regular fa-object-group"></i>
 
@@ -89,7 +82,7 @@ if (!isset($_COOKIE['cookieWebilys'])) {
             </p>
           </div>
         </a>
-        <a href="./refonte-de-site-web.html">
+        <a href="./refonte-de-site-web.php">
           <div class="service-item">
             <i class="fa-regular fa-object-ungroup"></i>
 
@@ -101,7 +94,7 @@ if (!isset($_COOKIE['cookieWebilys'])) {
             </p>
           </div>
         </a>
-        <a href="./optimisation-de-site-web-seo.html">
+        <a href="./optimisation-de-site-web-seo.php">
           <div class="service-item">
             <i class="fa-solid fa-magnifying-glass-chart"></i>
 
@@ -113,7 +106,7 @@ if (!isset($_COOKIE['cookieWebilys'])) {
             </p>
           </div>
         </a>
-        <a href="./publicites-ads.html">
+        <a href="./publicites-ads.php">
           <div class="service-item">
             <i class="fa-solid fa-chart-line"></i>
             <h3>Publicités Ads</h3>
@@ -124,7 +117,7 @@ if (!isset($_COOKIE['cookieWebilys'])) {
             </p>
           </div>
         </a>
-        <a href="./marketing.html">
+        <a href="./marketing.php">
           <div class="service-item">
             <i class="fa-solid fa-comments-dollar"></i>
 
@@ -136,7 +129,7 @@ if (!isset($_COOKIE['cookieWebilys'])) {
             </p>
           </div>
         </a>
-        <a href="./design-graphique.html">
+        <a href="./design-graphique.php">
           <div class="service-item">
             <i class="fa-solid fa-pen-ruler"></i>
 
@@ -244,7 +237,7 @@ if (!isset($_COOKIE['cookieWebilys'])) {
           </div>
         </a>
       </div>
-      <button><a href="./portfolio.html">Découvrir le portfolio</a></button>
+      <button><a href="./portfolio.php">Découvrir le portfolio</a></button>
     </section>
 
     <section id="a-propos">
@@ -291,46 +284,15 @@ if (!isset($_COOKIE['cookieWebilys'])) {
             <input type="checkbox" id="acceptTransmissionDonnees" name="acceptTransmissionDonnees" required />
           </span>
           <label for="acceptTransmissionDonnees">J’accepte que mes données soient utilisées conformément à la
-            <a href="./confidentialite.html">Politique de confidentialité</a>.</label>
+            <a href="./confidentialite.php">Politique de confidentialité</a>.</label>
         </div>
         <button type="submit">Envoyer</button>
       </form>
     </section>
   </main>
-  <footer>
-    <div class="copyright">
-      <p>
-        ©2024 - <a href="./index.html">Webilys</a> - Tous droits réservés.
-      </p>
-    </div>
-    <div class="legal-link">
-      <p>
-        <a href="./mentions-legales.html">Mentions légales</a> |
-        <a href="./confidentialite.html">Confidentialité</a>
-      </p>
-    </div>
-  </footer>
-  <?php if ($showPopup): ?>
-    <div id="cookiePopup" class="show">
-      <img src="./assets/img/cookie.png" alt="Cookies" />
-      <p>
-        Ce site utilise des cookies pour vous garantir la meilleure expérience
-        sur notre site. En utilisant notre site, vous acceptez les cookies.
-        <a href="./cookies.html">En savoir plus</a>
-      </p>
-      <button id="acceptCookie">Accepter</button>
-    </div>
-  <?php endif; ?>
-
-  <section class="contactButton">
-    <a href="tel:+33666430997">
-      <div class="buttonCall">
-        <p>Je contacte Webilys</p>
-        <i class="fa-solid fa-phone"></i>
-      </div>
-    </a>
-  </section>
-
+  <?php include './includes/footer.php'; ?>
+  <?php include './includes/cookie-popup.php'; ?>
+  <?php include './includes/button-call.php'; ?>
   <script src="./assets/js/index.js"></script>
 </body>
 
