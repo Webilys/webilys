@@ -1,3 +1,13 @@
+<?php
+if (!isset($_COOKIE['cookieWebilys'])) {
+    // Si le cookie n'existe pas, afficher le popup
+    $showPopup = true;
+} else {
+    // Si le cookie existe, ne pas afficher le popup
+    $showPopup = false;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -17,27 +27,25 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Refonte de Sites - Webilys | Modernisez votre Présence en Ligne
-    </title>
+    <title>Création de Sites - Webilys | Conception Web Personnalisée</title>
 
     <meta
       name="description"
-      content="Découvrez le service de refonte de sites de Webilys pour moderniser, optimiser et améliorer les performances de votre site actuel. Faites évoluer votre site pour attirer et convertir efficacement vos visiteurs."
+      content="Découvrez le service de création de sites Web sur mesure de Webilys. Transformez votre vision en un site moderne, performant et optimisé, conçu pour attirer et engager vos visiteurs."
     />
     <meta
       name="keywords"
-      content="Webilys, refonte de site, optimisation de site web, amélioration site web, design moderne, SEO, expérience utilisateur, UX"
+      content="Webilys, création de site web, conception web, site sur mesure, design web, développement web, expérience utilisateur, UX, UI"
     />
     <meta name="author" content="Webilys" />
 
     <meta
       property="og:title"
-      content="Refonte de Sites - Webilys | Modernisez votre Présence en Ligne"
+      content="Création de Sites - Webilys | Conception Web Personnalisée"
     />
     <meta
       property="og:description"
-      content="Redonnez vie à votre site avec la refonte de Webilys. Transformez votre présence en ligne avec un site optimisé, moderne et performant."
+      content="Transformez votre vision en un site web moderne, performant et attractif grâce au service de création de sites de Webilys."
     />
     <meta
       property="og:image"
@@ -45,18 +53,18 @@
     />
     <meta
       property="og:url"
-      content="https://webilys.fr/refonte-de-site-web.html"
+      content="https://webilys.fr/creation-de-site-web.html"
     />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Refonte de Sites - Webilys | Modernisez votre Présence en Ligne"
+      content="Création de Sites - Webilys | Conception Web Personnalisée"
     />
     <meta
       name="twitter:description"
-      content="Optimisez votre site actuel avec Webilys pour mieux convertir et engager votre audience."
+      content="Découvrez notre service de création de sites Web personnalisés pour engager vos clients."
     />
     <meta
       name="twitter:image"
@@ -65,9 +73,10 @@
     <meta name="robots" content="index, follow" />
     <link
       rel="canonical"
-      href="https://www.webilys.fr/refonte-de-site-web.html"
+      href="https://www.webilys.fr/creation-de-site-web.html"
     />
     <meta name="theme-color" content="#000000" />
+
     <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
 
     <link rel="stylesheet" href="./assets/css/index.css" />
@@ -113,78 +122,78 @@
 
     <main>
       <section class="title-page">
-        <h1>Refonte de Sites</h1>
+        <h1>Création de Sites</h1>
       </section>
 
       <section id="services-pages">
         <div id="service-intro">
           <p>
-            Chez Webilys, la refonte de sites est une opportunité de redonner
-            vie à votre présence en ligne. Nous modernisons, optimisons et
-            améliorons votre site existant pour qu'il attire, engage et
-            convertisse efficacement. <br /><br />
-            Que ce soit pour rafraîchir le design, optimiser la vitesse ou
-            améliorer l'expérience utilisateur, notre équipe s’assure que votre
-            site reflète l’image actuelle de votre marque.
+            Chez Webilys, la création de sites est bien plus qu'une simple
+            construction de pages web. Nous concevons des expériences en ligne
+            sur mesure, alignées avec votre marque et orientées pour convertir
+            vos visiteurs en clients. <br /><br />
+            De la conception à la réalisation, chaque détail est pensé pour
+            maximiser votre impact en ligne, que vous soyez une entreprise en
+            plein essor, un entrepreneur ou une association.
           </p>
         </div>
         <div id="details">
           <h2>Notre approche</h2>
           <div id="details-container">
             <div class="detail-item">
-              <i class="fa-solid fa-chart-line"></i>
-              <h3>Évaluation complète</h3>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <h3>Analyse des besoins</h3>
               <p>
-                Nous analysons les forces et les faiblesses de votre site actuel
-                pour définir les axes d'amélioration.
+                Nous débutons avec une étude approfondie de vos objectifs pour
+                créer un site en phase avec votre stratégie et vos cibles.
               </p>
             </div>
             <div class="detail-item">
-              <i class="fa-solid fa-palette"></i>
-              <h3>Design rafraîchi</h3>
+              <i class="fa-regular fa-object-group"></i>
+              <h3>Design personnalisé</h3>
               <p>
-                Nous réinventons l'interface de votre site pour lui donner un
-                look moderne et en phase avec votre identité.
+                Nous concevons des interfaces modernes et intuitives, optimisées
+                pour offrir une expérience utilisateur (UX) fluide et agréable.
               </p>
             </div>
             <div class="detail-item">
-              <i class="fa-solid fa-rocket"></i>
-              <h3>Optimisation technique</h3>
+              <i class="fa-solid fa-microchip"></i>
+              <h3>Technologies de pointe</h3>
               <p>
-                Nous assurons des performances optimales en termes de vitesse,
-                de sécurité et de SEO pour un meilleur classement et une
-                meilleure expérience utilisateur.
+                Nous utilisons des technologies fiables et performantes pour
+                garantir que votre site soit rapide, sécurisé et optimisé pour
+                le référencement naturel (SEO).
               </p>
             </div>
+
             <div class="detail-item">
-              <i class="fa-solid fa-thumbs-up"></i>
-              <h3>Amélioration de l'UX</h3>
+              <i class="fa-solid fa-mobile-screen"></i>
+              <h3>Responsive</h3>
               <p>
-                Nous optimisons la navigation pour offrir une expérience
-                utilisateur fluide et intuitive.
+                Chaque site est adapté pour s’afficher parfaitement sur tous les
+                appareils (ordinateurs, tablettes, smartphones).
               </p>
             </div>
           </div>
         </div>
         <div id="avantages">
-          <h2>Avantages d'une refonte par Webilys</h2>
+          <h2>Avantages d'un site Web conçu par Webilys</h2>
           <div id="avantages-container">
             <p class="avantage-item">
-              <i class="fa-solid fa-users"></i>
-              Renforcez l'engagement et la satisfaction de vos visiteurs
+              <i class="fa-solid fa-users-viewfinder"></i>
+              Attirer et engager efficacement votre audience cible
             </p>
             <p class="avantage-item">
-              <i class="fa-solid fa-bolt"></i>
-              Bénéficiez d’un site plus rapide et plus performant
+              <i class="fa-solid fa-user-tie"></i>
+              Améliorer votre image de marque avec un design professionnel
             </p>
             <p class="avantage-item">
-              <i class="fa-solid fa-search"></i>
-              Améliorez votre référencement et gagnez en visibilité
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+              Gagner en visibilité grâce à une structure SEO optimisée
             </p>
             <p class="avantage-item">
-              <i class="fa-solid fa-chart-line"></i>
-              Boostez vos conversions grâce à une meilleure expérience
-              utilisateur
+              <i class="fa-solid fa-cart-plus"></i>
+              Augmenter les conversions avec un site pensé pour l'utilisateur
             </p>
           </div>
         </div>
@@ -244,6 +253,18 @@
         </p>
       </div>
     </footer>
+    <?php if ($showPopup): ?>
+    <div id="cookiePopup" class="show">
+      <img src="./assets/img/cookie.png" alt="Cookies" />
+      <p>
+        Ce site utilise des cookies pour vous garantir la meilleure expérience
+        sur notre site. En utilisant notre site, vous acceptez les cookies.
+        <a href="./cookies.html">En savoir plus</a>
+      </p>
+      <button id="acceptCookie">Accepter</button>
+    </div>
+    <?php endif; ?>
+
     <section class="contactButton">
       <a href="tel:+33666430997">
         <div class="buttonCall">

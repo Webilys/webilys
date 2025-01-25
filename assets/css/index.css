@@ -82,6 +82,28 @@ a:hover {
     opacity: 1;
   }
 }
+@-webkit-keyframes hiddenPopUp {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes hiddenPopUp {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 button {
   background: radial-gradient(circle, #f1c566 20%, #d59646 80%);
   border: none;
@@ -220,6 +242,82 @@ button[type=submit]:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: url(../img/cursor-white.ico), pointer;
+}
+
+#cookiePopup {
+  background: #000;
+  position: fixed;
+  width: 70vw;
+  max-width: 42.85em;
+  -webkit-box-shadow: 0 0 5px #f1c566;
+          box-shadow: 0 0 5px #f1c566;
+  text-align: justify;
+  line-height: 1.8em;
+  padding: 2em 1.4em;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  z-index: 10000000000000000000000000000000000000000;
+}
+@media screen and (max-width: 37.5em) {
+  #cookiePopup {
+    width: 100%;
+  }
+}
+#cookiePopup img {
+  display: block;
+  width: 3.75em;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  position: relative;
+  margin: auto;
+}
+#cookiePopup p {
+  text-align: center;
+  margin: 1.4em 0;
+  font-size: 0.9rem;
+}
+#cookiePopup p a {
+  font-weight: bold;
+  cursor: url("../img/cursor-gold.ico"), pointer;
+}
+#cookiePopup p a:hover {
+  color: #f1c566;
+  cursor: url("../img/cursor-white.ico"), pointer;
+}
+#cookiePopup button {
+  padding: 1em 1.4em;
+  display: block;
+  position: relative;
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hide {
+  -webkit-animation: hiddenPopUp 0.7s linear;
+          animation: hiddenPopUp 0.7s linear;
+  bottom: 0;
+  right: 2em;
+  visibility: hidden;
+}
+@media screen and (max-width: 37.5em) {
+  .hide {
+    bottom: 2em;
+    right: 0;
+  }
+}
+
+.show {
+  visibility: visible;
+  bottom: 2em;
+  right: 2em;
+}
+@media screen and (max-width: 37.5em) {
+  .show {
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .title-page {
@@ -857,6 +955,51 @@ main #contact form textarea:hover,
 main #contact form textarea:focus,
 main #contact form textarea:active {
   outline: 2px solid #f1c566;
+}
+main #contact form #checkbox-div {
+  display: grid;
+  grid-template-columns: 5% 95%;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main #contact form #checkbox-div input[type=checkbox] {
+  -moz-appearance: none;
+       appearance: none; /* Supprime le style par défaut */
+  -webkit-appearance: none; /* Pour Safari */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  background-color: white;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  -webkit-transition: border 0.3s ease;
+  transition: border 0.3s ease;
+  border-radius: 5px;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+main #contact form #checkbox-div input[type=checkbox]:checked {
+  background-color: #f1c566;
+  border-color: #f1c566;
+}
+main #contact form #checkbox-div input[type=checkbox]:hover {
+  border-color: #f1c566;
+}
+main #contact form label {
+  text-align: left;
+  font-size: 0.9rem;
+}
+main #contact form label a {
+  font-weight: bold;
+}
+main #contact form label a:hover {
+  color: #f1c566;
+  cursor: url("../img/cursor-white.ico"), pointer;
 }
 
 footer {

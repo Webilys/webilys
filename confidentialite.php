@@ -1,3 +1,13 @@
+<?php
+if (!isset($_COOKIE['cookieWebilys'])) {
+    // Si le cookie n'existe pas, afficher le popup
+    $showPopup = true;
+} else {
+    // Si le cookie existe, ne pas afficher le popup
+    $showPopup = false;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -17,45 +27,46 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mentions Légales - Webilys</title>
-
+    <title>Politique de Confidentialité - Webilys</title>
     <meta
       name="description"
-      content="Consultez les mentions légales du site Webilys pour en savoir plus sur l'éditeur, l'hébergeur et les informations de contact."
+      content="Découvrez la politique de confidentialité de Webilys pour comprendre comment vos données personnelles sont collectées et utilisées."
     />
     <meta
       name="keywords"
-      content="Webilys, mentions légales, informations légales, contact, hébergeur, éditeur"
+      content="Webilys, politique de confidentialité, protection des données, RGPD, données personnelles, sécurité"
     />
     <meta name="author" content="Webilys" />
 
-    <meta property="og:title" content="Mentions Légales - Webilys" />
+    <meta
+      property="og:title"
+      content="Politique de Confidentialité - Webilys"
+    />
     <meta
       property="og:description"
-      content="Retrouvez les mentions légales du site Webilys pour connaître les informations légales et de contact."
+      content="Retrouvez les informations sur la collecte et l'utilisation de vos données personnelles par Webilys."
     />
     <meta
       property="og:image"
       content="https://webilys.fr/assets/img/hero.webp"
     />
-    <meta
-      property="og:url"
-      content="https://webilys.fr/mentions-legales.html"
-    />
+    <meta property="og:url" content="https://webilys.fr/confidentialite.html" />
     <meta property="og:type" content="website" />
-
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Mentions Légales - Webilys" />
+    <meta
+      name="twitter:title"
+      content="Politique de Confidentialité - Webilys"
+    />
     <meta
       name="twitter:description"
-      content="Découvrez les mentions légales du site Webilys."
+      content="Découvrez comment Webilys protège vos données personnelles."
     />
     <meta
       name="twitter:image"
       content="https://webilys.fr/assets/img/hero.webp"
     />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.webilys.fr/mentions-legales.html" />
+    <link rel="canonical" href="https://www.webilys.fr/confidentialite.html" />
     <meta name="theme-color" content="#000000" />
     <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
     <link rel="stylesheet" href="./assets/css/index.css" />
@@ -98,64 +109,71 @@
         </ul>
       </nav>
     </header>
-
     <main>
       <section class="title-page">
-        <h1>Mentions Légales</h1>
+        <h1>Politique de Confidentialité</h1>
       </section>
 
       <section class="legal">
         <div class="legal-container">
           <p>En vigueur au 01/11/2024</p>
 
-          <h2>Édition du site</h2>
+          <h2>Collecte des données</h2>
           <p>
-            Le présent site, accessible à l’URL
-            <a href="https://www.webilys.fr">www.webilys.fr</a> (ci-après
-            dénommé le « Site »), est édité par :
+            Webilys collecte vos données personnelles via les formulaires de
+            contact présents sur le site. Les données collectées incluent :
           </p>
-          <p>
-            EI Webilys, immatriculée au RCS de Tarascon sous le numéro
-            <strong>SIRET 000 000 000 00000</strong>, dont le siège social est
-            situé au :
-          </p>
-          <p>7, place Émile Combes<br />13150 Tarascon, France</p>
+          <ul>
+            <li>Nom et prénom</li>
+            <li>Email</li>
+            <li>Numéro de téléphone</li>
+            <li>Message ou description de votre projet</li>
+          </ul>
 
-          <h2>Hébergement</h2>
-          <p>Le site est hébergé par la société :</p>
+          <h2>Utilisation des données</h2>
           <p>
-            <strong>IONOS SARL</strong><br />
-            7, place de la gare<br />
-            BP 70109<br />
-            57200 Sarreguemines Cedex<br />
-            France
-          </p>
-          <p>
-            Contact téléphonique : <a href="tel:+33970808911">0970 808 911</a>
+            Les informations collectées sont utilisées uniquement pour répondre
+            à vos demandes, établir un contact commercial, ou vous envoyer des
+            informations relatives à nos services.
           </p>
 
-          <h2>Directeur de publication</h2>
-          <p>Le directeur de la publication du Site est Webilys.</p>
+          <h2>Conservation des données</h2>
+          <p>
+            Vos données sont conservées pour une durée maximale de 2 ans à
+            compter de la dernière interaction avec Webilys, sauf obligation
+            légale contraire.
+          </p>
+
+          <h2>Protection des données</h2>
+          <p>
+            Webilys met en œuvre des mesures de sécurité appropriées pour
+            protéger vos données contre les accès non autorisés, la perte ou la
+            divulgation.
+          </p>
+
+          <h2>Vos droits</h2>
+          <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+          <ul>
+            <li>Droit d’accès à vos données</li>
+            <li>Droit de rectification</li>
+            <li>Droit à l’effacement</li>
+            <li>Droit à la portabilité de vos données</li>
+            <li>Droit d’opposition au traitement de vos données</li>
+          </ul>
+          <p>
+            Vous pouvez exercer vos droits en contactant Webilys à l’adresse :
+            <a href="mailto:contact@webilys.fr">contact@webilys.fr</a>.
+          </p>
 
           <h2>Contact</h2>
           <p>
-            Pour toute question ou demande d'information, vous pouvez nous
-            contacter :
+            Pour toute question relative à notre politique de confidentialité,
+            veuillez nous écrire à l’adresse :
+            <a href="mailto:contact@webilys.fr">contact@webilys.fr</a>.
           </p>
-          <ul>
-            <li>
-              Par email :
-              <a href="mailto:contact@webilys.fr">contact@webilys.fr</a>
-            </li>
-            <li>
-              Via le formulaire de contact : Disponible à la rubrique
-              <a href="./index.html#contact">« Contact »</a>
-            </li>
-          </ul>
         </div>
       </section>
     </main>
-
     <footer>
       <div class="copyright">
         <p>
@@ -169,6 +187,18 @@
         </p>
       </div>
     </footer>
+    <?php if ($showPopup): ?>
+    <div id="cookiePopup" class="show">
+      <img src="./assets/img/cookie.png" alt="Cookies" />
+      <p>
+        Ce site utilise des cookies pour vous garantir la meilleure expérience
+        sur notre site. En utilisant notre site, vous acceptez les cookies.
+        <a href="./cookies.html">En savoir plus</a>
+      </p>
+      <button id="acceptCookie">Accepter</button>
+    </div>
+    <?php endif; ?>
+
     <section class="contactButton">
       <a href="tel:+33666430997">
         <div class="buttonCall">

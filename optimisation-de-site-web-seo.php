@@ -1,3 +1,12 @@
+<?php
+if (!isset($_COOKIE['cookieWebilys'])) {
+    // Si le cookie n'existe pas, afficher le popup
+    $showPopup = true;
+} else {
+    // Si le cookie existe, ne pas afficher le popup
+    $showPopup = false;
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -17,25 +26,25 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Création de Sites - Webilys | Conception Web Personnalisée</title>
+    <title>Optimisation (SEO) - Webilys | Boostez votre Visibilité</title>
 
     <meta
       name="description"
-      content="Découvrez le service de création de sites Web sur mesure de Webilys. Transformez votre vision en un site moderne, performant et optimisé, conçu pour attirer et engager vos visiteurs."
+      content="Découvrez le service d'optimisation SEO de Webilys pour améliorer le classement de votre site, attirer plus de trafic et convertir vos visiteurs en clients."
     />
     <meta
       name="keywords"
-      content="Webilys, création de site web, conception web, site sur mesure, design web, développement web, expérience utilisateur, UX, UI"
+      content="Webilys, SEO, optimisation de site web, référencement naturel, stratégie SEO, visibilité en ligne, trafic organique, contenu optimisé"
     />
     <meta name="author" content="Webilys" />
 
     <meta
       property="og:title"
-      content="Création de Sites - Webilys | Conception Web Personnalisée"
+      content="Optimisation (SEO) - Webilys | Boostez votre Visibilité"
     />
     <meta
       property="og:description"
-      content="Transformez votre vision en un site web moderne, performant et attractif grâce au service de création de sites de Webilys."
+      content="Améliorez le classement de votre site et gagnez en visibilité grâce au service d'optimisation SEO de Webilys."
     />
     <meta
       property="og:image"
@@ -43,18 +52,18 @@
     />
     <meta
       property="og:url"
-      content="https://webilys.fr/creation-de-site-web.html"
+      content="https://webilys.fr/optimisation-seo.html"
     />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Création de Sites - Webilys | Conception Web Personnalisée"
+      content="Optimisation (SEO) - Webilys | Boostez votre Visibilité"
     />
     <meta
       name="twitter:description"
-      content="Découvrez notre service de création de sites Web personnalisés pour engager vos clients."
+      content="Optimisez votre site avec Webilys et gagnez en visibilité dans les moteurs de recherche."
     />
     <meta
       name="twitter:image"
@@ -63,10 +72,9 @@
     <meta name="robots" content="index, follow" />
     <link
       rel="canonical"
-      href="https://www.webilys.fr/creation-de-site-web.html"
+      href="https://www.webilys.fr/optimisation-de-site-web-seo.html"
     />
     <meta name="theme-color" content="#000000" />
-
     <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
 
     <link rel="stylesheet" href="./assets/css/index.css" />
@@ -112,19 +120,19 @@
 
     <main>
       <section class="title-page">
-        <h1>Création de Sites</h1>
+        <h1>Optimisation (SEO)</h1>
       </section>
 
       <section id="services-pages">
         <div id="service-intro">
           <p>
-            Chez Webilys, la création de sites est bien plus qu'une simple
-            construction de pages web. Nous concevons des expériences en ligne
-            sur mesure, alignées avec votre marque et orientées pour convertir
-            vos visiteurs en clients. <br /><br />
-            De la conception à la réalisation, chaque détail est pensé pour
-            maximiser votre impact en ligne, que vous soyez une entreprise en
-            plein essor, un entrepreneur ou une association.
+            Chez Webilys, nous faisons bien plus que du SEO. Nous mettons en
+            œuvre des stratégies sur mesure pour améliorer la visibilité de
+            votre site, augmenter votre trafic organique et maximiser vos
+            conversions. <br /><br />
+            Que vous soyez une petite entreprise ou une grande organisation,
+            notre expertise en optimisation SEO garantit que votre site se
+            démarque dans les résultats des moteurs de recherche.
           </p>
         </div>
         <div id="details">
@@ -132,58 +140,56 @@
           <div id="details-container">
             <div class="detail-item">
               <i class="fa-solid fa-magnifying-glass"></i>
-              <h3>Analyse des besoins</h3>
+              <h3>Audit SEO</h3>
               <p>
-                Nous débutons avec une étude approfondie de vos objectifs pour
-                créer un site en phase avec votre stratégie et vos cibles.
+                Nous analysons votre site pour identifier les opportunités
+                d'amélioration et élaborer une stratégie SEO personnalisée.
               </p>
             </div>
             <div class="detail-item">
-              <i class="fa-regular fa-object-group"></i>
-              <h3>Design personnalisé</h3>
+              <i class="fa-solid fa-file-alt"></i>
+              <h3>Optimisation du contenu</h3>
               <p>
-                Nous concevons des interfaces modernes et intuitives, optimisées
-                pour offrir une expérience utilisateur (UX) fluide et agréable.
+                Nous optimisons vos textes, balises et mots-clés pour garantir
+                qu'ils correspondent aux intentions de recherche de vos cibles.
               </p>
             </div>
             <div class="detail-item">
-              <i class="fa-solid fa-microchip"></i>
-              <h3>Technologies de pointe</h3>
+              <i class="fa-solid fa-chart-bar"></i>
+              <h3>Suivi et analyse</h3>
               <p>
-                Nous utilisons des technologies fiables et performantes pour
-                garantir que votre site soit rapide, sécurisé et optimisé pour
-                le référencement naturel (SEO).
+                Nous surveillons vos performances SEO pour ajuster nos
+                stratégies et garantir des résultats durables.
               </p>
             </div>
-
             <div class="detail-item">
-              <i class="fa-solid fa-mobile-screen"></i>
-              <h3>Responsive</h3>
+              <i class="fa-solid fa-globe"></i>
+              <h3>SEO technique</h3>
               <p>
-                Chaque site est adapté pour s’afficher parfaitement sur tous les
-                appareils (ordinateurs, tablettes, smartphones).
+                Nous optimisons la vitesse, la structure et la sécurité de votre
+                site pour répondre aux exigences des moteurs de recherche.
               </p>
             </div>
           </div>
         </div>
         <div id="avantages">
-          <h2>Avantages d'un site Web conçu par Webilys</h2>
+          <h2>Avantages de l'optimisation SEO avec Webilys</h2>
           <div id="avantages-container">
             <p class="avantage-item">
-              <i class="fa-solid fa-users-viewfinder"></i>
-              Attirer et engager efficacement votre audience cible
+              <i class="fa-solid fa-search-plus"></i>
+              Améliorez votre classement dans les moteurs de recherche
             </p>
             <p class="avantage-item">
-              <i class="fa-solid fa-user-tie"></i>
-              Améliorer votre image de marque avec un design professionnel
+              <i class="fa-solid fa-chart-line"></i>
+              Attirez un trafic organique de qualité
             </p>
             <p class="avantage-item">
-              <i class="fa-solid fa-magnifying-glass-chart"></i>
-              Gagner en visibilité grâce à une structure SEO optimisée
+              <i class="fa-solid fa-user-check"></i>
+              Ciblez efficacement vos audiences
             </p>
             <p class="avantage-item">
-              <i class="fa-solid fa-cart-plus"></i>
-              Augmenter les conversions avec un site pensé pour l'utilisateur
+              <i class="fa-solid fa-star"></i>
+              Maximisez vos conversions grâce à une meilleure visibilité
             </p>
           </div>
         </div>
@@ -243,6 +249,18 @@
         </p>
       </div>
     </footer>
+    <?php if ($showPopup): ?>
+    <div id="cookiePopup" class="show">
+      <img src="./assets/img/cookie.png" alt="Cookies" />
+      <p>
+        Ce site utilise des cookies pour vous garantir la meilleure expérience
+        sur notre site. En utilisant notre site, vous acceptez les cookies.
+        <a href="./cookies.html">En savoir plus</a>
+      </p>
+      <button id="acceptCookie">Accepter</button>
+    </div>
+    <?php endif; ?>
+
     <section class="contactButton">
       <a href="tel:+33666430997">
         <div class="buttonCall">

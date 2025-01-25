@@ -1,3 +1,12 @@
+<?php
+if (!isset($_COOKIE['cookieWebilys'])) {
+    // Si le cookie n'existe pas, afficher le popup
+    $showPopup = true;
+} else {
+    // Si le cookie existe, ne pas afficher le popup
+    $showPopup = false;
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -17,50 +26,57 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marketing - Webilys | Stratégies de Marketing Digital</title>
+    <title>
+      Refonte de Sites - Webilys | Modernisez votre Présence en Ligne
+    </title>
 
     <meta
       name="description"
-      content="Découvrez le service de marketing digital de Webilys. Nous créons des stratégies efficaces pour accroître votre visibilité en ligne et fidéliser votre audience."
+      content="Découvrez le service de refonte de sites de Webilys pour moderniser, optimiser et améliorer les performances de votre site actuel. Faites évoluer votre site pour attirer et convertir efficacement vos visiteurs."
     />
     <meta
       name="keywords"
-      content="Webilys, marketing digital, stratégie marketing, réseaux sociaux, contenu marketing, engagement client, visibilité en ligne"
+      content="Webilys, refonte de site, optimisation de site web, amélioration site web, design moderne, SEO, expérience utilisateur, UX"
     />
     <meta name="author" content="Webilys" />
 
     <meta
       property="og:title"
-      content="Marketing - Webilys | Stratégies de Marketing Digital"
+      content="Refonte de Sites - Webilys | Modernisez votre Présence en Ligne"
     />
     <meta
       property="og:description"
-      content="Boostez votre présence en ligne avec les stratégies de marketing digital de Webilys pour attirer et fidéliser votre audience."
+      content="Redonnez vie à votre site avec la refonte de Webilys. Transformez votre présence en ligne avec un site optimisé, moderne et performant."
     />
     <meta
       property="og:image"
       content="https://webilys.fr/assets/img/hero.webp"
     />
-    <meta property="og:url" content="https://webilys.fr/marketing.html" />
+    <meta
+      property="og:url"
+      content="https://webilys.fr/refonte-de-site-web.html"
+    />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Marketing - Webilys | Stratégies de Marketing Digital"
+      content="Refonte de Sites - Webilys | Modernisez votre Présence en Ligne"
     />
     <meta
       name="twitter:description"
-      content="Développez votre audience et fidélisez vos clients avec les stratégies de marketing digital de Webilys."
+      content="Optimisez votre site actuel avec Webilys pour mieux convertir et engager votre audience."
     />
     <meta
       name="twitter:image"
       content="https://webilys.fr/assets/img/hero.webp"
     />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.webilys.fr/marketing.html" />
+    <link
+      rel="canonical"
+      href="https://www.webilys.fr/refonte-de-site-web.html"
+    />
     <meta name="theme-color" content="#000000" />
-
     <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
 
     <link rel="stylesheet" href="./assets/css/index.css" />
@@ -106,76 +122,78 @@
 
     <main>
       <section class="title-page">
-        <h1>Marketing Digital</h1>
+        <h1>Refonte de Sites</h1>
       </section>
 
       <section id="services-pages">
         <div id="service-intro">
           <p>
-            Chez Webilys, notre service de marketing digital est conçu pour vous
-            aider à atteindre, engager et fidéliser votre audience grâce à des
-            stratégies personnalisées et performantes. <br /><br />
-            De la gestion des réseaux sociaux à la création de contenu
-            captivant, nous mettons en place des actions ciblées pour optimiser
-            votre présence en ligne.
+            Chez Webilys, la refonte de sites est une opportunité de redonner
+            vie à votre présence en ligne. Nous modernisons, optimisons et
+            améliorons votre site existant pour qu'il attire, engage et
+            convertisse efficacement. <br /><br />
+            Que ce soit pour rafraîchir le design, optimiser la vitesse ou
+            améliorer l'expérience utilisateur, notre équipe s’assure que votre
+            site reflète l’image actuelle de votre marque.
           </p>
         </div>
         <div id="details">
           <h2>Notre approche</h2>
           <div id="details-container">
             <div class="detail-item">
-              <i class="fa-solid fa-bullhorn"></i>
-              <h3>Stratégie de contenu</h3>
-              <p>
-                Nous créons des contenus engageants et alignés sur votre marque
-                pour captiver votre audience et renforcer votre image.
-              </p>
-            </div>
-            <div class="detail-item">
-              <i class="fa-solid fa-hashtag"></i>
-              <h3>Gestion des réseaux sociaux</h3>
-              <p>
-                Nous élaborons des campagnes sur mesure pour développer votre
-                communauté et générer de l'engagement autour de votre marque.
-              </p>
-            </div>
-            <div class="detail-item">
               <i class="fa-solid fa-chart-line"></i>
-              <h3>Analyse et ajustement</h3>
+              <h3>Évaluation complète</h3>
               <p>
-                Nous analysons les performances de vos campagnes et ajustons les
-                stratégies pour maximiser les résultats.
+                Nous analysons les forces et les faiblesses de votre site actuel
+                pour définir les axes d'amélioration.
               </p>
             </div>
-
             <div class="detail-item">
-              <i class="fa-solid fa-users"></i>
-              <h3>Segmentation de l'audience</h3>
+              <i class="fa-solid fa-palette"></i>
+              <h3>Design rafraîchi</h3>
               <p>
-                Nous ciblons les segments les plus pertinents pour optimiser
-                votre budget et atteindre des clients potentiels de qualité.
+                Nous réinventons l'interface de votre site pour lui donner un
+                look moderne et en phase avec votre identité.
+              </p>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-rocket"></i>
+              <h3>Optimisation technique</h3>
+              <p>
+                Nous assurons des performances optimales en termes de vitesse,
+                de sécurité et de SEO pour un meilleur classement et une
+                meilleure expérience utilisateur.
+              </p>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-thumbs-up"></i>
+              <h3>Amélioration de l'UX</h3>
+              <p>
+                Nous optimisons la navigation pour offrir une expérience
+                utilisateur fluide et intuitive.
               </p>
             </div>
           </div>
         </div>
         <div id="avantages">
-          <h2>Avantages de notre marketing digital</h2>
+          <h2>Avantages d'une refonte par Webilys</h2>
           <div id="avantages-container">
             <p class="avantage-item">
-              <i class="fa-solid fa-bullseye"></i>
-              Accroître votre visibilité et attirer plus de clients
+              <i class="fa-solid fa-users"></i>
+              Renforcez l'engagement et la satisfaction de vos visiteurs
             </p>
             <p class="avantage-item">
-              <i class="fa-solid fa-users-line"></i>
-              Renforcer l'engagement et la fidélité de votre audience
+              <i class="fa-solid fa-bolt"></i>
+              Bénéficiez d’un site plus rapide et plus performant
             </p>
             <p class="avantage-item">
-              <i class="fa-solid fa-chart-bar"></i>
-              Mesurer et améliorer les performances en continu
+              <i class="fa-solid fa-search"></i>
+              Améliorez votre référencement et gagnez en visibilité
             </p>
             <p class="avantage-item">
-              <i class="fa-solid fa-dollar-sign"></i>
-              Optimiser le retour sur investissement pour chaque action
+              <i class="fa-solid fa-chart-line"></i>
+              Boostez vos conversions grâce à une meilleure expérience
+              utilisateur
             </p>
           </div>
         </div>
@@ -235,6 +253,18 @@
         </p>
       </div>
     </footer>
+    <?php if ($showPopup): ?>
+    <div id="cookiePopup" class="show">
+      <img src="./assets/img/cookie.png" alt="Cookies" />
+      <p>
+        Ce site utilise des cookies pour vous garantir la meilleure expérience
+        sur notre site. En utilisant notre site, vous acceptez les cookies.
+        <a href="./cookies.html">En savoir plus</a>
+      </p>
+      <button id="acceptCookie">Accepter</button>
+    </div>
+    <?php endif; ?>
+
     <section class="contactButton">
       <a href="tel:+33666430997">
         <div class="buttonCall">

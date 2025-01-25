@@ -1,3 +1,12 @@
+<?php
+if (!isset($_COOKIE['cookieWebilys'])) {
+    // Si le cookie n'existe pas, afficher le popup
+    $showPopup = true;
+} else {
+    // Si le cookie existe, ne pas afficher le popup
+    $showPopup = false;
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -236,6 +245,18 @@
         </p>
       </div>
     </footer>
+    <?php if ($showPopup): ?>
+    <div id="cookiePopup" class="show">
+      <img src="./assets/img/cookie.png" alt="Cookies" />
+      <p>
+        Ce site utilise des cookies pour vous garantir la meilleure expérience
+        sur notre site. En utilisant notre site, vous acceptez les cookies.
+        <a href="./cookies.html">En savoir plus</a>
+      </p>
+      <button id="acceptCookie">Accepter</button>
+    </div>
+    <?php endif; ?>
+
     <section class="contactButton">
       <a href="tel:+33666430997">
         <div class="buttonCall">

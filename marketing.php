@@ -1,3 +1,12 @@
+<?php
+if (!isset($_COOKIE['cookieWebilys'])) {
+    // Si le cookie n'existe pas, afficher le popup
+    $showPopup = true;
+} else {
+    // Si le cookie existe, ne pas afficher le popup
+    $showPopup = false;
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -17,55 +26,50 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Optimisation (SEO) - Webilys | Boostez votre Visibilité</title>
+    <title>Marketing - Webilys | Stratégies de Marketing Digital</title>
 
     <meta
       name="description"
-      content="Découvrez le service d'optimisation SEO de Webilys pour améliorer le classement de votre site, attirer plus de trafic et convertir vos visiteurs en clients."
+      content="Découvrez le service de marketing digital de Webilys. Nous créons des stratégies efficaces pour accroître votre visibilité en ligne et fidéliser votre audience."
     />
     <meta
       name="keywords"
-      content="Webilys, SEO, optimisation de site web, référencement naturel, stratégie SEO, visibilité en ligne, trafic organique, contenu optimisé"
+      content="Webilys, marketing digital, stratégie marketing, réseaux sociaux, contenu marketing, engagement client, visibilité en ligne"
     />
     <meta name="author" content="Webilys" />
 
     <meta
       property="og:title"
-      content="Optimisation (SEO) - Webilys | Boostez votre Visibilité"
+      content="Marketing - Webilys | Stratégies de Marketing Digital"
     />
     <meta
       property="og:description"
-      content="Améliorez le classement de votre site et gagnez en visibilité grâce au service d'optimisation SEO de Webilys."
+      content="Boostez votre présence en ligne avec les stratégies de marketing digital de Webilys pour attirer et fidéliser votre audience."
     />
     <meta
       property="og:image"
       content="https://webilys.fr/assets/img/hero.webp"
     />
-    <meta
-      property="og:url"
-      content="https://webilys.fr/optimisation-seo.html"
-    />
+    <meta property="og:url" content="https://webilys.fr/marketing.html" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Optimisation (SEO) - Webilys | Boostez votre Visibilité"
+      content="Marketing - Webilys | Stratégies de Marketing Digital"
     />
     <meta
       name="twitter:description"
-      content="Optimisez votre site avec Webilys et gagnez en visibilité dans les moteurs de recherche."
+      content="Développez votre audience et fidélisez vos clients avec les stratégies de marketing digital de Webilys."
     />
     <meta
       name="twitter:image"
       content="https://webilys.fr/assets/img/hero.webp"
     />
     <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://www.webilys.fr/optimisation-de-site-web-seo.html"
-    />
+    <link rel="canonical" href="https://www.webilys.fr/marketing.html" />
     <meta name="theme-color" content="#000000" />
+
     <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
 
     <link rel="stylesheet" href="./assets/css/index.css" />
@@ -111,76 +115,76 @@
 
     <main>
       <section class="title-page">
-        <h1>Optimisation (SEO)</h1>
+        <h1>Marketing Digital</h1>
       </section>
 
       <section id="services-pages">
         <div id="service-intro">
           <p>
-            Chez Webilys, nous faisons bien plus que du SEO. Nous mettons en
-            œuvre des stratégies sur mesure pour améliorer la visibilité de
-            votre site, augmenter votre trafic organique et maximiser vos
-            conversions. <br /><br />
-            Que vous soyez une petite entreprise ou une grande organisation,
-            notre expertise en optimisation SEO garantit que votre site se
-            démarque dans les résultats des moteurs de recherche.
+            Chez Webilys, notre service de marketing digital est conçu pour vous
+            aider à atteindre, engager et fidéliser votre audience grâce à des
+            stratégies personnalisées et performantes. <br /><br />
+            De la gestion des réseaux sociaux à la création de contenu
+            captivant, nous mettons en place des actions ciblées pour optimiser
+            votre présence en ligne.
           </p>
         </div>
         <div id="details">
           <h2>Notre approche</h2>
           <div id="details-container">
             <div class="detail-item">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <h3>Audit SEO</h3>
+              <i class="fa-solid fa-bullhorn"></i>
+              <h3>Stratégie de contenu</h3>
               <p>
-                Nous analysons votre site pour identifier les opportunités
-                d'amélioration et élaborer une stratégie SEO personnalisée.
+                Nous créons des contenus engageants et alignés sur votre marque
+                pour captiver votre audience et renforcer votre image.
               </p>
             </div>
             <div class="detail-item">
-              <i class="fa-solid fa-file-alt"></i>
-              <h3>Optimisation du contenu</h3>
+              <i class="fa-solid fa-hashtag"></i>
+              <h3>Gestion des réseaux sociaux</h3>
               <p>
-                Nous optimisons vos textes, balises et mots-clés pour garantir
-                qu'ils correspondent aux intentions de recherche de vos cibles.
+                Nous élaborons des campagnes sur mesure pour développer votre
+                communauté et générer de l'engagement autour de votre marque.
               </p>
             </div>
             <div class="detail-item">
-              <i class="fa-solid fa-chart-bar"></i>
-              <h3>Suivi et analyse</h3>
+              <i class="fa-solid fa-chart-line"></i>
+              <h3>Analyse et ajustement</h3>
               <p>
-                Nous surveillons vos performances SEO pour ajuster nos
-                stratégies et garantir des résultats durables.
+                Nous analysons les performances de vos campagnes et ajustons les
+                stratégies pour maximiser les résultats.
               </p>
             </div>
+
             <div class="detail-item">
-              <i class="fa-solid fa-globe"></i>
-              <h3>SEO technique</h3>
+              <i class="fa-solid fa-users"></i>
+              <h3>Segmentation de l'audience</h3>
               <p>
-                Nous optimisons la vitesse, la structure et la sécurité de votre
-                site pour répondre aux exigences des moteurs de recherche.
+                Nous ciblons les segments les plus pertinents pour optimiser
+                votre budget et atteindre des clients potentiels de qualité.
               </p>
             </div>
           </div>
         </div>
         <div id="avantages">
-          <h2>Avantages de l'optimisation SEO avec Webilys</h2>
+          <h2>Avantages de notre marketing digital</h2>
           <div id="avantages-container">
             <p class="avantage-item">
-              <i class="fa-solid fa-search-plus"></i>
-              Améliorez votre classement dans les moteurs de recherche
+              <i class="fa-solid fa-bullseye"></i>
+              Accroître votre visibilité et attirer plus de clients
             </p>
             <p class="avantage-item">
-              <i class="fa-solid fa-chart-line"></i>
-              Attirez un trafic organique de qualité
+              <i class="fa-solid fa-users-line"></i>
+              Renforcer l'engagement et la fidélité de votre audience
             </p>
             <p class="avantage-item">
-              <i class="fa-solid fa-user-check"></i>
-              Ciblez efficacement vos audiences
+              <i class="fa-solid fa-chart-bar"></i>
+              Mesurer et améliorer les performances en continu
             </p>
             <p class="avantage-item">
-              <i class="fa-solid fa-star"></i>
-              Maximisez vos conversions grâce à une meilleure visibilité
+              <i class="fa-solid fa-dollar-sign"></i>
+              Optimiser le retour sur investissement pour chaque action
             </p>
           </div>
         </div>
@@ -240,6 +244,18 @@
         </p>
       </div>
     </footer>
+    <?php if ($showPopup): ?>
+    <div id="cookiePopup" class="show">
+      <img src="./assets/img/cookie.png" alt="Cookies" />
+      <p>
+        Ce site utilise des cookies pour vous garantir la meilleure expérience
+        sur notre site. En utilisant notre site, vous acceptez les cookies.
+        <a href="./cookies.html">En savoir plus</a>
+      </p>
+      <button id="acceptCookie">Accepter</button>
+    </div>
+    <?php endif; ?>
+
     <section class="contactButton">
       <a href="tel:+33666430997">
         <div class="buttonCall">

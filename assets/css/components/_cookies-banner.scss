@@ -1,0 +1,74 @@
+#cookiePopup {
+  background: $black;
+  position: fixed;
+  width: 70vw;
+  max-width: 42.85em;
+  box-shadow: 0 0 5px $color1;
+  text-align: justify;
+  line-height: 1.8em;
+  padding: 2em 1.4em;
+  border-radius: 10px;
+  transition: all 0.5s ease-in;
+  z-index: 9999999999999999999999999999999999999999;
+
+  @media screen and (max-width: 37.5em) {
+    width: 100%;
+  }
+
+  img {
+    display: block;
+    width: 3.75em;
+    transform: translateZ(0);
+    position: relative;
+    margin: auto;
+  }
+
+  p {
+    text-align: center;
+    margin: 1.4em 0;
+    font-size: 0.9rem;
+
+    a {
+      font-weight: bold;
+      cursor: url("../img/cursor-gold.ico"), pointer;
+
+      &:hover {
+        color: $color1;
+        cursor: url("../img/cursor-white.ico"), pointer;
+      }
+    }
+  }
+
+  button {
+    padding: 1em 1.4em;
+    display: block;
+    position: relative;
+    margin: auto;
+    // font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.hide {
+  animation: hiddenPopUp 0.7s linear;
+  bottom: 0;
+  right: 2em;
+  visibility: hidden;
+
+  @media screen and (max-width: 37.5em) {
+    bottom: 2em;
+    right: 0;
+  }
+}
+
+.show {
+  visibility: visible;
+  bottom: 2em;
+  right: 2em;
+
+  @media screen and (max-width: 37.5em) {
+    bottom: 0;
+    right: 0;
+  }
+}
