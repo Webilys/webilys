@@ -129,3 +129,47 @@ window.onload = () => {
     checkCookie();
   }, 2000);
 };
+
+//----------FORMULAIRE DE CONTACT
+$(function () {
+  $("#contact-form").submit(function (e) {
+    e.preventDefault(); // Empêche le rechargement de la page
+
+    $(".comments").empty(); // Vide les messages d'erreur
+    const submitButton = $("#contact-form button[type=submit]");
+    submitButton.prop("disabled", true); // Désactive le bouton pour éviter les soumissions multiples
+
+    const postData = $("#contact-form").serialize(); // Sérialise les données du formulaire
+
+    $.ajax({
+      type: "POST",
+      url: "./php/contact.php", // Chemin vers le fichier PHP
+      data: postData,
+      dataType: "json",
+      success: function (result) {
+        if (result.isSucces) {
+          // Envoi réussi : affiche un message de succès
+          $("#contact-form").append(
+            "<p class='thank-you'>Votre message a bien été envoyé. Merci de nous avoir contactés !</p>"
+          );
+          $("#contact-form")[0].reset(); // Réinitialise le formulaire
+        } else {
+          // Affiche les messages d'erreur sous les champs concernés
+          if (result.nameError) $("#nameError").html(result.nameError);
+          if (result.emailError) $("#emailError").html(result.emailError);
+          if (result.telephoneError)
+            $("#telephoneError").html(result.telephoneError);
+          if (result.messageError) $("#messageError").html(result.messageError);
+          if (result.checkedAcceptError)
+            $("#checkedAcceptError").html(result.checkedAcceptError);
+        }
+      },
+      error: function () {
+        alert("Une erreur est survenue. Veuillez réessayer plus tard.");
+      },
+      complete: function () {
+        submitButton.prop("disabled", false); // Réactive le bouton d'envoi
+      },
+    });
+  });
+});

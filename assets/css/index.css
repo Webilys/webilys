@@ -1001,6 +1001,12 @@ main #contact form label a:hover {
   color: #f1c566;
   cursor: url("../img/cursor-white.ico"), pointer;
 }
+main #contact form p {
+  height: 25px;
+  padding-bottom: 10px;
+  font-size: 0.8rem;
+  color: red;
+}
 
 footer {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #f1c566), color-stop(80%, #d59646));

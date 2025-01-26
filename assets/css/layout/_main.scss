@@ -343,6 +343,7 @@ main {
     p {
       padding-bottom: 50px;
     }
+
     form {
       width: 50%;
       margin: 0 auto;
@@ -369,6 +370,7 @@ main {
           outline: 2px solid $color1;
         }
       }
+
       #checkbox-div {
         display: grid;
         grid-template-columns: 5% 95%;
@@ -397,6 +399,7 @@ main {
           }
         }
       }
+
       label {
         text-align: left;
         font-size: 0.9rem;
@@ -407,6 +410,13 @@ main {
             cursor: url("../img/cursor-white.ico"), pointer;
           }
         }
+      }
+
+      p {
+        height: 25px;
+        padding-bottom: 10px;
+        font-size: 0.8rem;
+        color: red;
       }
     }
   }
