@@ -154,6 +154,12 @@
         </div>
       </div>
       <div class="galerie-container">
+        <a href="https://webiluys-images.webilys.fr/" target="_blank" class="galerie-item">
+          <div>
+            <img src="./assets/img/webilys-images.png" alt="Webilys Images" />
+            <p>Webilys Images</p>
+          </div>
+        </a>
         <a href="https://burger-code.webilys.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/burger-code.png" alt="Burger Code" />
