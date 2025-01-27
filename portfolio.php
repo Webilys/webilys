@@ -77,6 +77,12 @@
       <!-- <a href="https://monadressemiel.webilys.fr/" target="_blank">
           <img src="./assets/img/mon-adresse-miel.png" alt="Mon adresse miel" />
         </a> -->
+      <a href="https://qrcode-generator.webilys.fr/" target="_blank" class="galerie-item">
+        <div>
+          <img src="./assets/img/qrcode-generator.png" alt="QR Code Generator" />
+          <p>QR Code Generator</p>
+        </div>
+      </a>
       <a href="https://webilys-images.webilys.fr/" target="_blank" class="galerie-item">
         <div>
           <img src="./assets/img/webilys-images.png" alt="Webilys Images" />

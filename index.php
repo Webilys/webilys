@@ -154,6 +154,12 @@
         </div>
       </div>
       <div class="galerie-container">
+        <a href="https://qrcode-generator.webilys.fr/" target="_blank" class="galerie-item">
+          <div>
+            <img src="./assets/img/qrcode-generator.png" alt="QR Code Generator" />
+            <p>QR Code Generator</p>
+          </div>
+        </a>
         <a href="https://webilys-images.webilys.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/webilys-images.png" alt="Webilys Images" />
