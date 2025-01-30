@@ -77,6 +77,18 @@
       <!-- <a href="https://monadressemiel.webilys.fr/" target="_blank">
           <img src="./assets/img/mon-adresse-miel.png" alt="Mon adresse miel" />
         </a> -->
+      <a href="https://voice-converter.webilys.fr/" target="_blank" class="galerie-item">
+        <div>
+          <img src="./assets/img/voice-converter.png" alt="Voice Converter" />
+          <p>Voice Converter</p>
+        </div>
+      </a>
+      <a href="https://cryptocurrency.webilys.fr/" target="_blank" class="galerie-item">
+        <div>
+          <img src="./assets/img/cryptocurrency.png" alt="Cryptocurrency" />
+          <p>Cryptocurrency</p>
+        </div>
+      </a>
       <a href="https://qrcode-generator.webilys.fr/" target="_blank" class="galerie-item">
         <div>
           <img src="./assets/img/qrcode-generator.png" alt="QR Code Generator" />
