@@ -1,12 +1,7 @@
 <?php
 
 echo '
-<a href="https://news-mag.webilys.fr/" target="_blank" class="galerie-item">
-<div>
-  <img src="./assets/img/news-mag.png" alt="News Mag" />
-  <p>News Mag</p>
-</div>
-</a>
+
 <a href="https://voice-converter.webilys.fr/" target="_blank" class="galerie-item">
 <div>
   <img src="./assets/img/voice-converter.png" alt="Voice Converter" />

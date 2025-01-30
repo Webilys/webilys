@@ -154,12 +154,12 @@
         </div>
       </div>
       <div class="galerie-container">
-        <a href="https://news-mag.webilys.fr/" target="_blank" class="galerie-item">
+        <!-- <a href="https://news-mag.webilys.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/news-mag.png" alt="News Mag" />
             <p>News Mag</p>
           </div>
-        </a>
+        </a> -->
         <a href="https://voice-converter.webilys.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/voice-converter.png" alt="Voice Converter" />
