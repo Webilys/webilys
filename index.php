@@ -160,6 +160,12 @@
             <p>News Mag</p>
           </div>
         </a> -->
+        <a href="https://priscilla-mezouar.webilys.fr/" target="_blank" class="galerie-item">
+          <div>
+            <img src="./assets/img/priscilla-mezouar.png" alt="Priscilla Mezouar CV" />
+            <p>Voice Converter</p>
+          </div>
+        </a>
         <a href="https://voice-converter.webilys.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/voice-converter.png" alt="Voice Converter" />

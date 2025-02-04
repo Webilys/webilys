@@ -1,29 +1,29 @@
 <?php
 
 echo '
-
-<a href="https://voice-converter.webilys.fr/" target="_blank" class="galerie-item">
+<a href="https://priscilla-mezouar.webilys.fr/" target="_blank">
+<div>
+  <img src="./assets/img/priscilla-mezouar.png" alt="Priscilla Mezouar CV" />
+</div>
+</a>
+<a href="https://voice-converter.webilys.fr/" target="_blank">
 <div>
   <img src="./assets/img/voice-converter.png" alt="Voice Converter" />
-  <p>Voice Converter</p>
 </div>
 </a>
-<a href="https://cryptocurrency.webilys.fr/" target="_blank" class="galerie-item">
+<a href="https://cryptocurrency.webilys.fr/" target="_blank">
 <div>
   <img src="./assets/img/cryptocurrency.png" alt="Cryptocurrency" />
-  <p>Cryptocurrency</p>
 </div>
 </a>
-<a href="https://qrcode-generator.webilys.fr/" target="_blank" class="galerie-item">
+<a href="https://qrcode-generator.webilys.fr/" target="_blank">
 <div>
   <img src="./assets/img/qrcode-generator.png" alt="QR Code Generator" />
-  <p>QR Code Generator</p>
 </div>
 </a>
-<a href="https://webilys-images.webilys.fr/" target="_blank" class="galerie-item">
+<a href="https://webilys-images.webilys.fr/" target="_blank">
 <div>
   <img src="./assets/img/webilys-images.png" alt="Webilys Images" />
-  <p>Webilys Images</p>
 </div>
 </a>
 <a href="https://burger-code.webilys.fr/" target="_blank">
@@ -70,4 +70,4 @@ echo '
 </a>
 
 '
-    ?>
+  ?>
