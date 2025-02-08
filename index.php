@@ -197,7 +197,7 @@
             <p>Les délices de Léana</p>
           </div>
         </a>
-        <a href="https://danyprovenceherbes.com" target="_blank" class="galerie-item">
+        <a href="https://danyprovenceherbes.fr" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/dany-provence-herbes.png" alt="Dany Provence Herbes" />
             <p>Dany Provence Herbes</p>

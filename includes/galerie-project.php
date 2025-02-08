@@ -45,7 +45,7 @@ echo '
 <a href="https://lesdelicesdeleana.webilys.fr/" target="_blank">
 <img src="./assets/img/les-delices-de-leana.png" alt="Les delices de Léana" />
 </a>
-<a href="https://danyprovenceherbes.com" target="_blank">
+<a href="https://danyprovenceherbes.fr" target="_blank">
 <img src="./assets/img/dany-provence-herbes.png" alt="Dany Provence Herbes" />
 </a>
 <a href="https://ici-bebe.fr/" target="_blank">
