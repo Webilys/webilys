@@ -154,16 +154,17 @@
         </div>
       </div>
       <div class="galerie-container">
-        <!-- <a href="https://news-mag.webilys.fr/" target="_blank" class="galerie-item">
-          <div>
-            <img src="./assets/img/news-mag.png" alt="News Mag" />
-            <p>News Mag</p>
-          </div>
-        </a> -->
+
         <a href="https://priscilla-mezouar.webilys.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/priscilla-mezouar.png" alt="Priscilla Mezouar CV" />
-            <p>Voice Converter</p>
+            <p>Priscilla Mezouar</p>
+          </div>
+        </a>
+        <a href="https://notes-app.webilys.fr/" target="_blank" class="galerie-item">
+          <div>
+            <img src="./assets/img/notes-app.png" alt="Notes App" />
+            <p>Notes App</p>
           </div>
         </a>
         <a href="https://voice-converter.webilys.fr/" target="_blank" class="galerie-item">

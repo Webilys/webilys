@@ -71,12 +71,6 @@
       </p>
     </section>
     <section id="portfolio-portfolio">
-      <!-- <a href="https://bengals-de-zeus.webilys.fr/" target="_blank">
-          <img src="./assets/img/bengals-de-zeus.png" alt="Bengals de Zeus" />
-        </a> -->
-      <!-- <a href="https://monadressemiel.webilys.fr/" target="_blank">
-          <img src="./assets/img/mon-adresse-miel.png" alt="Mon adresse miel" />
-        </a> -->
       <?php include './includes/galerie-project.php'; ?>
     </section>
 
