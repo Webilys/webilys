@@ -6,6 +6,11 @@ echo '
   <img src="./assets/img/priscilla-mezouar.png" alt="Priscilla Mezouar CV" />
 </div>
 </a>
+<a href="https://todo-list-app.webilys.fr/" target="_blank">
+<div>
+  <img src="./assets/img/todo-list-app.png" alt="To Do List App" />
+</div>
+</a>
 <a href="https://notes-app.webilys.fr/" target="_blank">
 <div>
   <img src="./assets/img/notes-app.png" alt="Notes App" />

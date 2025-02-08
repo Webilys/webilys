@@ -161,6 +161,12 @@
             <p>Priscilla Mezouar</p>
           </div>
         </a>
+        <a href="https://todo-list-app.webilys.fr/" target="_blank" class="galerie-item">
+          <div>
+            <img src="./assets/img/todo-list-app.png" alt="ToDo List App" />
+            <p>To-Do List App</p>
+          </div>
+        </a>
         <a href="https://notes-app.webilys.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/notes-app.png" alt="Notes App" />
