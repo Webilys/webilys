@@ -15,9 +15,6 @@
 
     gtag("config", "G-1N9RTFVQX0");
   </script>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>
     Webilys - Agence de Création Digitale | Création de sites Web, Refonte,
     optimisation SEO, Ads, Marketing digital & Design à Tarascon
@@ -26,30 +23,15 @@
     content="Webilys est une agence web créative spécialisée dans la création et la refonte de sites internet, l'optimisation SEO, la gestion de campagnes publicitaires et le design graphique. Donnez vie à vos projets web avec Webilys à Tarascon !" />
   <meta name="keywords"
     content="Webilys, agence web, création de site, refonte de site, optimisation SEO, Ads, marketing digital, design graphique, création digitale" />
-  <meta name="author" content="Webilys" />
   <meta property="og:title" content="Webilys - Agence de Création Digitale | Sites Web, Marketing & Design" />
   <meta property="og:description"
     content="Découvrez Webilys, une agence créative offrant des services de création de sites, refonte, SEO, Ads et design graphique. Donnez vie à vos projets digitaux !" />
-  <meta property="og:image" content="https://webilys.fr/assets/img/hero.webp" />
   <meta property="og:url" content="https://webilys.fr" />
-  <meta property="og:type" content="website" />
-
-  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Webilys - Agence de Création Digitale | Sites Web, Marketing & Design" />
   <meta name="twitter:description"
     content="Webilys, l'agence digitale pour vos projets web : création de sites, refonte, SEO, Ads et design graphique." />
-  <meta name="twitter:image" content="https://webilys.fr/assets/img/hero.webp" />
-  <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.webilys.fr/index.php" />
-  <meta name="theme-color" content="#000000" />
-  <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
-
-  <link rel="stylesheet" href="./assets/css/index.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <?php include './includes/links-head.php' ?>
 </head>
 
 <body>

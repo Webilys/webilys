@@ -15,33 +15,21 @@
 
     gtag("config", "G-1N9RTFVQX0");
   </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Politique de Confidentialité - Webilys</title>
   <meta name="description"
     content="Découvrez la politique de confidentialité de Webilys pour comprendre comment vos données personnelles sont collectées et utilisées." />
   <meta name="keywords"
     content="Webilys, politique de confidentialité, protection des données, RGPD, données personnelles, sécurité" />
-  <meta name="author" content="Webilys" />
-
   <meta property="og:title" content="Politique de Confidentialité - Webilys" />
   <meta property="og:description"
     content="Retrouvez les informations sur la collecte et l'utilisation de vos données personnelles par Webilys." />
-  <meta property="og:image" content="https://webilys.fr/assets/img/hero.webp" />
   <meta property="og:url" content="https://webilys.fr/confidentialite.php" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Politique de Confidentialité - Webilys" />
   <meta name="twitter:description" content="Découvrez comment Webilys protège vos données personnelles." />
-  <meta name="twitter:image" content="https://webilys.fr/assets/img/hero.webp" />
-  <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.webilys.fr/confidentialite.php" />
-  <meta name="theme-color" content="#000000" />
-  <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
-  <link rel="stylesheet" href="./assets/css/index.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <?php include './includes/links-head.php'; ?>
+
 </head>
 
 <body>

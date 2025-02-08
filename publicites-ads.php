@@ -15,37 +15,27 @@
 
     gtag("config", "G-1N9RTFVQX0");
   </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Publicités Ads - Webilys | Boostez votre Visibilité en Ligne</title>
 
   <meta name="description"
     content="Découvrez le service de gestion de publicités Ads de Webilys pour augmenter votre visibilité, attirer des visiteurs qualifiés et maximiser votre retour sur investissement." />
   <meta name="keywords"
     content="Webilys, publicités Ads, gestion Ads, Google Ads, Facebook Ads, campagnes publicitaires, stratégie Ads, visibilité en ligne, ROI" />
-  <meta name="author" content="Webilys" />
 
   <meta property="og:title" content="Publicités Ads - Webilys | Boostez votre Visibilité en Ligne" />
   <meta property="og:description"
     content="Générez plus de trafic et attirez des clients potentiels avec les services de gestion de publicités Ads de Webilys." />
-  <meta property="og:image" content="https://webilys.fr/assets/img/hero.webp" />
   <meta property="og:url" content="https://webilys.fr/publicites-ads.php" />
-  <meta property="og:type" content="website" />
 
-  <meta name="twitter:card" content="summary_large_image" />
+
   <meta name="twitter:title" content="Publicités Ads - Webilys | Boostez votre Visibilité en Ligne" />
   <meta name="twitter:description"
     content="Augmentez votre visibilité en ligne avec les services de gestion de publicités Ads de Webilys." />
-  <meta name="twitter:image" content="https://webilys.fr/assets/img/hero.webp" />
-  <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.webilys.fr/publicites-ads.php" />
-  <meta name="theme-color" content="#000000" />
-  <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
 
-  <link rel="stylesheet" href="./assets/css/index.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <?php include './includes/links-head.php'; ?>
+
 </head>
 
 <body>

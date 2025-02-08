@@ -16,38 +16,23 @@
 
     gtag("config", "G-1N9RTFVQX0");
   </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Création de Sites - Webilys | Conception Web Personnalisée</title>
 
   <meta name="description"
     content="Découvrez le service de création de sites Web sur mesure de Webilys. Transformez votre vision en un site moderne, performant et optimisé, conçu pour attirer et engager vos visiteurs." />
   <meta name="keywords"
     content="Webilys, création de site web, conception web, site sur mesure, design web, développement web, expérience utilisateur, UX, UI" />
-  <meta name="author" content="Webilys" />
 
   <meta property="og:title" content="Création de Sites - Webilys | Conception Web Personnalisée" />
   <meta property="og:description"
     content="Transformez votre vision en un site web moderne, performant et attractif grâce au service de création de sites de Webilys." />
-  <meta property="og:image" content="https://webilys.fr/assets/img/hero.webp" />
   <meta property="og:url" content="https://webilys.fr/creation-de-site-web.php" />
-  <meta property="og:type" content="website" />
-
-  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Création de Sites - Webilys | Conception Web Personnalisée" />
   <meta name="twitter:description"
     content="Découvrez notre service de création de sites Web personnalisés pour engager vos clients." />
-  <meta name="twitter:image" content="https://webilys.fr/assets/img/hero.webp" />
-  <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.webilys.fr/creation-de-site-web.php" />
-  <meta name="theme-color" content="#000000" />
+  <?php include './includes/links-head.php'; ?>
 
-  <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
-
-  <link rel="stylesheet" href="./assets/css/index.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>

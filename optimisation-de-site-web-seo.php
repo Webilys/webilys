@@ -15,37 +15,21 @@
 
     gtag("config", "G-1N9RTFVQX0");
   </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Optimisation (SEO) - Webilys | Boostez votre Visibilité</title>
-
   <meta name="description"
     content="Découvrez le service d'optimisation SEO de Webilys pour améliorer le classement de votre site, attirer plus de trafic et convertir vos visiteurs en clients." />
   <meta name="keywords"
     content="Webilys, SEO, optimisation de site web, référencement naturel, stratégie SEO, visibilité en ligne, trafic organique, contenu optimisé" />
-  <meta name="author" content="Webilys" />
-
   <meta property="og:title" content="Optimisation (SEO) - Webilys | Boostez votre Visibilité" />
   <meta property="og:description"
     content="Améliorez le classement de votre site et gagnez en visibilité grâce au service d'optimisation SEO de Webilys." />
-  <meta property="og:image" content="https://webilys.fr/assets/img/hero.webp" />
   <meta property="og:url" content="https://webilys.fr/optimisation-seo.php" />
-  <meta property="og:type" content="website" />
-
-  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Optimisation (SEO) - Webilys | Boostez votre Visibilité" />
   <meta name="twitter:description"
     content="Optimisez votre site avec Webilys et gagnez en visibilité dans les moteurs de recherche." />
-  <meta name="twitter:image" content="https://webilys.fr/assets/img/hero.webp" />
-  <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.webilys.fr/optimisation-de-site-web-seo.php" />
-  <meta name="theme-color" content="#000000" />
-  <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
+  <?php include './includes/links-head.php'; ?>
 
-  <link rel="stylesheet" href="./assets/css/index.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>

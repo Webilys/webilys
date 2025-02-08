@@ -15,34 +15,24 @@
 
     gtag("config", "G-1N9RTFVQX0");
   </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Politique des Cookies - Webilys</title>
 
   <meta name="description"
     content="Découvrez la politique de gestion des cookies sur le site Webilys et apprenez comment les contrôler et les désactiver." />
   <meta name="keywords"
     content="Webilys, politique des cookies, gestion des cookies, désactivation des cookies, RGPD" />
-  <meta name="author" content="Webilys" />
 
   <meta property="og:title" content="Politique des Cookies - Webilys" />
   <meta property="og:description"
     content="Retrouvez notre politique de cookies pour comprendre leur utilisation sur notre site." />
-  <meta property="og:image" content="https://webilys.fr/assets/img/hero.webp" />
   <meta property="og:url" content="https://webilys.fr/cookies.php" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
+
   <meta name="twitter:title" content="Politique des Cookies - Webilys" />
   <meta name="twitter:description" content="Apprenez-en plus sur notre utilisation des cookies et comment les gérer." />
   <meta name="twitter:image" content="https://webilys.fr/assets/img/hero.webp" />
-  <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.webilys.fr/cookies.php" />
-  <meta name="theme-color" content="#000000" />
-  <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
-  <link rel="stylesheet" href="./assets/css/index.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <?php include './includes/links-head.php'; ?>
+
 </head>
 
 <body>

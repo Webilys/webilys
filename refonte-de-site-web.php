@@ -15,39 +15,22 @@
 
     gtag("config", "G-1N9RTFVQX0");
   </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>
     Refonte de Sites - Webilys | Modernisez votre Présence en Ligne
   </title>
-
   <meta name="description"
     content="Découvrez le service de refonte de sites de Webilys pour moderniser, optimiser et améliorer les performances de votre site actuel. Faites évoluer votre site pour attirer et convertir efficacement vos visiteurs." />
   <meta name="keywords"
     content="Webilys, refonte de site, optimisation de site web, amélioration site web, design moderne, SEO, expérience utilisateur, UX" />
-  <meta name="author" content="Webilys" />
-
   <meta property="og:title" content="Refonte de Sites - Webilys | Modernisez votre Présence en Ligne" />
   <meta property="og:description"
     content="Redonnez vie à votre site avec la refonte de Webilys. Transformez votre présence en ligne avec un site optimisé, moderne et performant." />
-  <meta property="og:image" content="https://webilys.fr/assets/img/hero.webp" />
   <meta property="og:url" content="https://webilys.fr/refonte-de-site-web.php" />
-  <meta property="og:type" content="website" />
-
-  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Refonte de Sites - Webilys | Modernisez votre Présence en Ligne" />
   <meta name="twitter:description"
     content="Optimisez votre site actuel avec Webilys pour mieux convertir et engager votre audience." />
-  <meta name="twitter:image" content="https://webilys.fr/assets/img/hero.webp" />
-  <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.webilys.fr/refonte-de-site-web.php" />
-  <meta name="theme-color" content="#000000" />
-  <link rel="shortcut icon" href="./assets/img/favicon-webilys.png" />
-
-  <link rel="stylesheet" href="./assets/css/index.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <?php include './includes/links-head.php'; ?>
 </head>
 
 <body>
