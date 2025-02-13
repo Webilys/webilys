@@ -136,19 +136,25 @@
         </div>
       </div>
       <div class="galerie-container">
-      <a href="https://e-volution.webilys.fr/" target="_blank" class="galerie-item">
-          <div>
-            <img src="./assets/img/e-volution.png" alt="E-volution" />
-            <p>E-volution</p>
-          </div>
-        </a>
-
+        
         <a href="https://priscilla-mezouar.webilys.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/priscilla-mezouar.png" alt="Priscilla Mezouar CV" />
             <p>Priscilla Mezouar</p>
           </div>
         </a>
+        <a href="https://pokedex.webilys.fr/" target="_blank" class="galerie-item">
+          <div>
+            <img src="./assets/img/pokedex.png" alt="Pokedex" />
+            <p>Pokedex</p>
+          </div>
+        </a>
+        <a href="https://e-volution.webilys.fr/" target="_blank" class="galerie-item">
+            <div>
+              <img src="./assets/img/e-volution.png" alt="E-volution" />
+              <p>E-volution</p>
+            </div>
+          </a>
         <a href="https://todo-list-app.webilys.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/todo-list-app.png" alt="ToDo List App" />

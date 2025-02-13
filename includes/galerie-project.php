@@ -6,6 +6,11 @@ echo '
   <img src="./assets/img/e-volution.png" alt="E-volution" />
 </div>
 </a>
+<a href="https://pokedex.webilys.fr/" target="_blank">
+<div>
+  <img src="./assets/img/pokedex.png" alt="Pokedex" />
+</div>
+</a>
 <a href="https://priscilla-mezouar.webilys.fr/" target="_blank">
 <div>
   <img src="./assets/img/priscilla-mezouar.png" alt="Priscilla Mezouar CV" />
