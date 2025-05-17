@@ -238,18 +238,6 @@
             <p>DParten'R</p>
           </div>
         </a>
-        <a href="https://fashiongipsy.fr/" target="_blank" class="galerie-item">
-          <div>
-            <img src="./assets/img/fashion-gipsy.png" alt="" />
-            <p>Fashion Gipsy</p>
-          </div>
-        </a>
-        <a href="https://institutdelatarasque.fr/" target="_blank" class="galerie-item">
-          <div>
-            <img src="./assets/img/institut-de-la-tarasque.png" alt="Institut de la Tarasque" />
-            <p>Institut de la Tarasque</p>
-          </div>
-        </a>
         <a href="https://sainte-marthe-tarascon.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/sainte-marthe.png" alt="Établissement privé catholique Sainte Marthe" />

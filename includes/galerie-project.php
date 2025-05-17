@@ -72,12 +72,6 @@ echo '
 <a href="https://dpartenr.fr/" target="_blank">
 <img src="./assets/img/dpartenr.png" alt="DPartenR" />
 </a>
-<a href="https://fashiongipsy.fr/" target="_blank">
-<img src="./assets/img/fashion-gipsy.png" alt="" />
-</a>
-<a href="https://institutdelatarasque.fr/" target="_blank">
-<img src="./assets/img/institut-de-la-tarasque.png" alt="Institut de la Tarasque" />
-</a>
 <a href="https://sainte-marthe-tarascon.fr/" target="_blank">
 <img src="./assets/img/sainte-marthe.png" alt="Établissement privé catholique Sainte Marthe" />
 </a>
