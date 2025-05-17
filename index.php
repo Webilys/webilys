@@ -136,7 +136,12 @@
         </div>
       </div>
       <div class="galerie-container">
-        
+      <a href="https://allo-taxi-sud-alpilles.com/" target="_blank" class="galerie-item">
+          <div>
+            <img src="./assets/img/allo-taxi-sud-alpilles.png" alt="Allo Taxi Sud Alpilles" />
+            <p>Priscilla Mezouar</p>
+          </div>
+        </a>
         <a href="https://priscilla-mezouar.webilys.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/priscilla-mezouar.png" alt="Priscilla Mezouar CV" />
