@@ -3,7 +3,7 @@
 echo '
 <a href="https://allo-taxi-sud.com/" target="_blank">
 <div>
-  <img src="./assets/img/allo-taxi-sud-alpilles.png" alt="Allo Taxi Sud Alpilles" />
+  <img src="./assets/img/allo-taxi-sud.png" alt="Allo Taxi Sud Alpilles" />
 </div>
 </a>
 <a href="https://e-volution.webilys.fr/" target="_blank">
