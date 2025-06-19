@@ -1,7 +1,7 @@
 <?php
 
 echo '
-<a href="https://allo-taxi-sud-alpilles/" target="_blank">
+<a href="https://allo-taxi-sud.com/" target="_blank">
 <div>
   <img src="./assets/img/allo-taxi-sud-alpilles.png" alt="Allo Taxi Sud Alpilles" />
 </div>
