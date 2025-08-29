@@ -139,139 +139,102 @@
       <a href="https://allo-taxi-sud.com/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/allo-taxi-sud.png" alt="Allo Taxi Sud Alpilles" />
-            <p>Priscilla Mezouar</p>
           </div>
         </a>
-        <a href="https://priscilla-mezouar.webilys.fr/" target="_blank" class="galerie-item">
-          <div>
-            <img src="./assets/img/priscilla-mezouar.png" alt="Priscilla Mezouar CV" />
-            <p>Priscilla Mezouar</p>
-          </div>
-        </a>
-        <!-- <a href="https://pokedex.webilys.fr/" target="_blank" class="galerie-item">
-          <div>
-            <img src="./assets/img/pokedex.png" alt="Pokedex" />
-            <p>Pokedex</p>
-          </div>
-        </a> -->
-        <a href="https://e-volution.webilys.fr/" target="_blank" class="galerie-item">
-            <div>
-              <img src="./assets/img/e-volution.png" alt="E-volution" />
-              <p>E-volution</p>
-            </div>
-          </a>
-        <!-- <a href="https://todo-list-app.webilys.fr/" target="_blank" class="galerie-item">
-          <div>
-            <img src="./assets/img/todo-list-app.png" alt="ToDo List App" />
-            <p>To-Do List App</p>
-          </div>
-        </a> -->
-        <!-- <a href="https://notes-app.webilys.fr/" target="_blank" class="galerie-item">
-          <div>
-            <img src="./assets/img/notes-app.png" alt="Notes App" />
-            <p>Notes App</p>
-          </div>
-        </a> -->
-        <!-- <a href="https://voice-converter.webilys.fr/" target="_blank" class="galerie-item">
-          <div>
-            <img src="./assets/img/voice-converter.png" alt="Voice Converter" />
-            <p>Voice Converter</p>
-          </div>
-        </a> -->
-
 
         <a href="https://fo-transport13.webilys.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/fo-transport13.png" alt="FO Transport 13" />
-            <p>FO Transport 13</p>
           </div>
         </a>
-        <a href="https://lesdelicesdeleana.webilys.fr/" target="_blank" class="galerie-item">
-          <div>
-            <img src="./assets/img/les-delices-de-leana.png" alt="Les delices de Léana" />
-            <p>Les délices de Léana</p>
-          </div>
-        </a>
+
         <a href="https://danyprovenceherbes.fr" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/dany-provence-herbes.png" alt="Dany Provence Herbes" />
-            <p>Dany Provence Herbes</p>
           </div>
         </a>
-        <a href="https://ici-bebe.fr/" target="_blank" class="galerie-item">
+
+                <a href="https://ici-bebe.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/ici-bebe.png" alt="Ici Bébé" />
-            <p>Ici Bébé</p>
           </div>
         </a>
+
         <a href="https://casadusud.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/casa-du-sud.png" alt="Casa du sud" />
-            <p>Casa du Sud</p>
           </div>
         </a>
+
         <a href="https://dpartenr.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/dpartenr.png" alt="DParten'R" />
-            <p>DParten'R</p>
           </div>
         </a>
+
         <a href="https://sainte-marthe-tarascon.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/sainte-marthe.png" alt="Établissement privé catholique Sainte Marthe" />
-            <p>Établissement Sainte Marthe</p>
           </div>
         </a>
+
         <a href="https://jcfamilles.webilys.fr" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/jcfamilles.png" alt="JC Familles" />
-            <p>JC Familles</p>
           </div>
         </a>
+
         <a href="https://jplecaudey.com/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/jp-lecaudey.png" alt="JP Lecaudey" />
-            <p>JP Lecaudey</p>
           </div>
         </a>
+
         <a href="https://7ounet.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/7-ou-net.png" alt="7 OU NET" />
-            <p>7 OU NET</p>
           </div>
         </a>
-        <a href="https://the-resto.webilys.fr/" target="_blank" class="galerie-item">
+
+                <a href="https://priscilla-mezouar.webilys.fr/" target="_blank" class="galerie-item">
           <div>
-            <img src="./assets/img/the-resto.png" alt="The resto" />
-            <p>The resto</p>
+            <img src="./assets/img/priscilla-mezouar.png" alt="Priscilla Mezouar CV" />
           </div>
         </a>
-                <a href="https://cryptocurrency.webilys.fr/" target="_blank" class="galerie-item">
+
+        <a href="https://lesdelicesdeleana.webilys.fr/" target="_blank" class="galerie-item">
           <div>
-            <img src="./assets/img/cryptocurrency.png" alt="Cryptocurrency" />
-            <p>Cryptocurrency</p>
-          </div>
-        </a>
-        <a href="https://qrcode-generator.webilys.fr/" target="_blank" class="galerie-item">
-          <div>
-            <img src="./assets/img/qrcode-generator.png" alt="QR Code Generator" />
-            <p>QR Code Generator</p>
-          </div>
-        </a>
-        <a href="https://webilys-images.webilys.fr/" target="_blank" class="galerie-item">
-          <div>
-            <img src="./assets/img/webilys-images.png" alt="Webilys Images" />
-            <p>Webilys Images</p>
+            <img src="./assets/img/les-delices-de-leana.png" alt="Les delices de Léana" />
           </div>
         </a>
         
-      </div>
-              <a href="https://burger-code.webilys.fr/" target="_blank" class="galerie-item">
+        <a href="https://e-volution.webilys.fr/" target="_blank" class="galerie-item">
+            <div>
+              <img src="./assets/img/e-volution.png" alt="E-volution" />
+            </div>
+          </a>
+
+        <a href="https://the-resto.webilys.fr/" target="_blank" class="galerie-item">
           <div>
-            <img src="./assets/img/burger-code.png" alt="Burger Code" />
-            <p>Burger Code</p>
+            <img src="./assets/img/the-resto.png" alt="The resto" />
           </div>
         </a>
+
+        <a href="https://burger-code.webilys.fr/" target="_blank" class="galerie-item">
+          <div>
+            <img src="./assets/img/burger-code.png" alt="Burger Code" />
+          </div>
+        </a>
+
+        <a href="https://cryptocurrency.webilys.fr/" target="_blank" class="galerie-item">
+  <div>
+    <img src="./assets/img/cryptocurrency.png" alt="Cryptocurrency" />
+  </div>
+</a>
+
+
+        
+      </div>
       <button><a href="./portfolio.php">Découvrir le portfolio</a></button>
     </section>
 
