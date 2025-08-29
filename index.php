@@ -148,60 +148,38 @@
             <p>Priscilla Mezouar</p>
           </div>
         </a>
-        <a href="https://pokedex.webilys.fr/" target="_blank" class="galerie-item">
+        <!-- <a href="https://pokedex.webilys.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/pokedex.png" alt="Pokedex" />
             <p>Pokedex</p>
           </div>
-        </a>
+        </a> -->
         <a href="https://e-volution.webilys.fr/" target="_blank" class="galerie-item">
             <div>
               <img src="./assets/img/e-volution.png" alt="E-volution" />
               <p>E-volution</p>
             </div>
           </a>
-        <a href="https://todo-list-app.webilys.fr/" target="_blank" class="galerie-item">
+        <!-- <a href="https://todo-list-app.webilys.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/todo-list-app.png" alt="ToDo List App" />
             <p>To-Do List App</p>
           </div>
-        </a>
-        <a href="https://notes-app.webilys.fr/" target="_blank" class="galerie-item">
+        </a> -->
+        <!-- <a href="https://notes-app.webilys.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/notes-app.png" alt="Notes App" />
             <p>Notes App</p>
           </div>
-        </a>
-        <a href="https://voice-converter.webilys.fr/" target="_blank" class="galerie-item">
+        </a> -->
+        <!-- <a href="https://voice-converter.webilys.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/voice-converter.png" alt="Voice Converter" />
             <p>Voice Converter</p>
           </div>
-        </a>
-        <a href="https://cryptocurrency.webilys.fr/" target="_blank" class="galerie-item">
-          <div>
-            <img src="./assets/img/cryptocurrency.png" alt="Cryptocurrency" />
-            <p>Cryptocurrency</p>
-          </div>
-        </a>
-        <a href="https://qrcode-generator.webilys.fr/" target="_blank" class="galerie-item">
-          <div>
-            <img src="./assets/img/qrcode-generator.png" alt="QR Code Generator" />
-            <p>QR Code Generator</p>
-          </div>
-        </a>
-        <a href="https://webilys-images.webilys.fr/" target="_blank" class="galerie-item">
-          <div>
-            <img src="./assets/img/webilys-images.png" alt="Webilys Images" />
-            <p>Webilys Images</p>
-          </div>
-        </a>
-        <a href="https://burger-code.webilys.fr/" target="_blank" class="galerie-item">
-          <div>
-            <img src="./assets/img/burger-code.png" alt="Burger Code" />
-            <p>Burger Code</p>
-          </div>
-        </a>
+        </a> -->
+
+
         <a href="https://fo-transport13.webilys.fr/" target="_blank" class="galerie-item">
           <div>
             <img src="./assets/img/fo-transport13.png" alt="FO Transport 13" />
@@ -268,7 +246,32 @@
             <p>The resto</p>
           </div>
         </a>
+                <a href="https://cryptocurrency.webilys.fr/" target="_blank" class="galerie-item">
+          <div>
+            <img src="./assets/img/cryptocurrency.png" alt="Cryptocurrency" />
+            <p>Cryptocurrency</p>
+          </div>
+        </a>
+        <a href="https://qrcode-generator.webilys.fr/" target="_blank" class="galerie-item">
+          <div>
+            <img src="./assets/img/qrcode-generator.png" alt="QR Code Generator" />
+            <p>QR Code Generator</p>
+          </div>
+        </a>
+        <a href="https://webilys-images.webilys.fr/" target="_blank" class="galerie-item">
+          <div>
+            <img src="./assets/img/webilys-images.png" alt="Webilys Images" />
+            <p>Webilys Images</p>
+          </div>
+        </a>
+        
       </div>
+              <a href="https://burger-code.webilys.fr/" target="_blank" class="galerie-item">
+          <div>
+            <img src="./assets/img/burger-code.png" alt="Burger Code" />
+            <p>Burger Code</p>
+          </div>
+        </a>
       <button><a href="./portfolio.php">Découvrir le portfolio</a></button>
     </section>
 
